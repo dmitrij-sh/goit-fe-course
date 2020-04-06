@@ -1,0 +1,39 @@
+html {
+ box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Playfair Display","Ubuntu", sans-serif, serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(98, 98, 98);
+}
+
+.container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.menu-nav {
+  display: inline-block;
+  width: 900px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.menu-nav li {
+  display: inline-block;
+  /* text-align: justify; */
+}
+
+.menu-nav li:not(:last-child) {
+  margin-right: 105px;
+}

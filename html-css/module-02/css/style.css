@@ -1,0 +1,141 @@
+ html {
+  box-sizing: border-box;
+ }
+
+ *,
+ * ::before,
+ * ::after {
+   box-sizing: inherit;
+ }
+
+ body {
+   font-family: "Playfair Display","Ubuntu", sans-serif, serif;
+   font-size: 14px;
+   line-height: 24px;
+   color: rgb(98, 98, 98);
+ }
+
+ img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .page-header {
+   margin-bottom: 104px;
+ }
+
+ .navigation {
+   padding: 77px 0px 0px;
+ }
+
+ .container {
+   width: 900px;
+   margin: 0px auto;
+ }
+
+ .menu-nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 900px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+.menu-nav li {
+  display: inline-block;
+  /* text-align: justify; */
+}
+
+.menu-nav li:not(:last-child) {
+  margin-right: 105px;
+}
+
+.menu-nav a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+}
+
+.menu-nav a:hover,
+.menu-nav a:focus {
+  color: rgb(3, 169, 244);
+}
+
+/* SECTION  */
+
+.site-content {
+  margin-bottom: 70px;
+}
+
+.wrapper-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+
+.wrapper-list li {
+  display: inline-block;
+  width: 420px;
+  margin-bottom: 54px;
+}
+
+p,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper-list-item:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+
+.wrapper-list-item:nth-child(2) {
+  margin-bottom: 132px;
+}
+
+.wrapper-list-item:nth-child(4) {
+  margin-bottom: 138px;
+}
+
+.wrapper-list-item img {
+  margin-bottom: 32px;
+}
+
+.suptitle {
+  margin-bottom: 28px;
+  color: rgb(180, 173, 158);
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 34px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.text-content {
+  font-size: 14px;
+}
+
+.button {
+  text-align: center;
+}
+
+.btn {
+  padding: 22px 34px;
+  border: 1px solid rgb(98, 98, 98);
+  min-width: 164px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(98, 98, 98);
+  cursor: pointer;
+}

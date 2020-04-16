@@ -13,10 +13,8 @@ body {
 }
 
 /* HEADER SECTION */
-.page-header {
-}
-
 .menu-nav {
+  padding-top: 40px;
 }
 
 .logo {
@@ -34,12 +32,18 @@ body {
   letter-spacing: -0.6px;
 }
 
-.menu-nav-list li {
+.menu-nav-list {
   float: right;
 }
 
+.menu-nav-list li {
+  float: left;
+}
+
+.menu-nav-list li:not(:last-child) {margin-right: 32px;}
+
 .menu-nav a {
-  /* display: block; */
+  display: block;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;

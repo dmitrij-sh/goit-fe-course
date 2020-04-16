@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: rgb(85, 82, 82);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0px auto;
+}
+
+/* HEADER SECTION */
+.page-header {
+}
+
+.menu-nav {
+}
+
+.logo {
+  float: left;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
+}
+
+.logo::first-letter {
+  color: rgb(26, 188, 156);
+  font-family: 'Roboto';
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.menu-nav-list li {
+  float: right;
+}
+
+.menu-nav a {
+  /* display: block; */
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(15, 1, 1);
+}
+
+.menu-nav a:hover,
+.menu-nav a:focus {
+  color: #1abc9c;
+}

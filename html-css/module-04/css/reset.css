@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+ }
+
+ *,
+ * ::before,
+ * ::after {
+   box-sizing: inherit;
+ }
+
+ img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+p[class] {
+  /* font-size: 100%; */
+  /* font-weight: normal; */
+  margin: 0px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {position: absolute; width: 1px; height: 1px; margin: -1; bottom: 0px; padding: 0px; word-spacing: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}

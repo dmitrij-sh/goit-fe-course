@@ -11,7 +11,7 @@ body {
   width: 1110px;
   margin: 0px auto;
 }
-/* HEADER SECTION */
+
 .menu-nav {
   padding-top: 40px;
 }
@@ -57,7 +57,7 @@ body {
 .menu-nav a:focus {
   color: rgb(26, 188, 156);
 }
-/* FEATURED SECTION */
+
 .page-featured {
   padding-top: 100px;
 }
@@ -81,6 +81,7 @@ body {
 }
 
 .featured-list-item {
+  width: 255px;
   float: left;
 }
 
@@ -144,7 +145,7 @@ body {
   float: right;
   font-weight: 700;
 }
-/* NEWS SECTION */
+
 .page-news {
 
   padding-top: 100px;
@@ -173,11 +174,11 @@ body {
 
 .row-preview h3::after {
   margin: 10px 0px 22px;
-display: block;
-width: 136px;
-height: 3px;
-background-color: rgb(78, 198, 171);
-content: "";
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: rgb(78, 198, 171);
+  content: "";
 }
 
 .row-preview p {
@@ -186,10 +187,9 @@ content: "";
 }
 
 .preview-img {
-margin-bottom: 10px;
+  width: 350px;
+  margin-bottom: 10px;
 }
-
-
 
 .btn-link {
   display: inline-block;

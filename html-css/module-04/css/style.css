@@ -51,9 +51,103 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: rgb(15, 1, 1);
+  transition: 0.3s;
 }
 
 .menu-nav a:hover,
 .menu-nav a:focus {
-  color: #1abc9c;
+  color: rgb(26, 188, 156);
+}
+
+/* FEATURED SECTION */
+.page-featured {
+  padding-top: 100px;
+
+}
+
+.title {
+  text-align: center;
+  color: rgb(81, 81, 81);
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.title::after {
+  margin: 20px auto 92px;
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  content: "";
+}
+
+.featured-list {
+
+}
+
+.featured-list-item {
+  float: left;
+}
+
+.featured-list-item:hover {
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0, 0.5);
+
+}
+.featured-list-item:hover .inner-desc {
+  background-color: rgb(26, 188, 156);
+}
+
+.featured-list-img {
+  filter: grayscale(1);
+}
+
+.featured-list-item:hover .featured-list-img {
+  filter: grayscale(0);
+}
+
+.featured-list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.featured-list-item:not(:nth-last-child(-n+4)) {
+  margin-bottom: 30px;
+}
+
+.featured-list-item a {
+  display: block;
+}
+
+.featured-list-item img {
+  background-color: rgb(233, 240, 253)
+
+}
+
+.inner-desc {
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.6px;
+  transition: 0.3s;
+}
+
+.inner-desc a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.inner-desc h3 {
+  width: 170px;
+  padding: 8px 14px;
+  float: left;
+  font-size: 18px;
+}
+
+.inner-desc p {
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, .44);
+  margin: 0px;
+  float: right;
+  font-weight: 700;
 }

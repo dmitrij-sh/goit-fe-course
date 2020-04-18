@@ -4,4 +4,4 @@
 
 - [Module 01-02](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-01/index.html)
 - [Module 03](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-02/index.html)
-- [Module 04]
+- [Module 04](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-04/index.html)

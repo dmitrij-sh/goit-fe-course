@@ -39,7 +39,9 @@ body {
   float: left;
 }
 
-.menu-nav-list li:not(:last-child) {margin-right: 32px;}
+.menu-nav-list li:not(:last-child) {
+  margin-right: 32px;
+}
 
 .menu-nav a {
   display: block;
@@ -147,7 +149,6 @@ body {
 }
 
 .page-news {
-
   padding-top: 100px;
 }
 

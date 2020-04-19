@@ -16,9 +16,11 @@ body {
   padding-top: 40px;
 }
 
-.logo {
+.site-logo .logo {
   float: left;
+  font-family: "Roboto";
   font-size: 30px;
+  line-height: 32px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -0.6px;

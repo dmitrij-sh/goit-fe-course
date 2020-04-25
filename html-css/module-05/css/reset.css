@@ -1,11 +1,18 @@
+*,
+* ::before,
+* ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
  }
 
- *,
- * ::before,
- * ::after {
-   box-sizing: inherit;
+ ul,
+ ol {
+   list-style: none;
  }
 
  img {
@@ -14,23 +21,8 @@ html {
   height: auto;
 }
 
-ul[class],
-ol[class] {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-h1[class],
-h2[class],
-h3[class],
-h4[class],
-h5[class],
-h6[class],
-p[class] {
-  /* font-size: 100%; */
-  /* font-weight: normal; */
-  margin: 0px;
+a {
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -40,6 +32,6 @@ input[type="radio"].visually-hidden {position: absolute; width: 1px; height: 1px
 
 .clearfix::after {
   display: table;
-  content: "";
+content: "";
   clear: both;
 }

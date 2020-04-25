@@ -168,7 +168,7 @@ main {
 .collection-list-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-
+marg
 .collection-list-item:not(:nth-last-child(-n+4)) {
   margin-bottom: 30px;
 }

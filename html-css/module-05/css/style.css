@@ -266,6 +266,7 @@ body {
 .overlay__btn {
   width: 48px;
   height: 48px;
+  transition: 0.3s;
   border:
   1px
   solid

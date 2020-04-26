@@ -4,90 +4,252 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>hw-05</title>
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="menu-nav clearfix">
-          <h1 class="site-logo">
-            <a class="logo" href="#">mart</a>
-          </h1>
-
-          <ul class="menu-nav-list clearfix">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <nav class="nav-menu clearfix">
+          <a href="#" class="logo">mart</a>
+          <ul class="nav__list clearfix">
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">About Us</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Page</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Shop</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Blog</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__list-link">Contact Us</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div class="slider-wrapper">
-      <div class="slider-overlay">
-        <img class="slider-img" src="./img/img-banner.jpg" alt="image" width="1600" height="600" />
-      </div>
-      <div class="slider-button-inner">
-        <button class="slider-ctrl left"></button>
-        <button class="slider-ctrl right"></button>
-      </div>
-    </div>
-
     <main>
-      <section class="page-collection container">
-        <h2 class="title">New collection</h2>
-        <ul class="collection-list clearfix">
-          <li class="collection-list-item">
-            <a href="#" >
-              <img class="collection-list-img" src="./img/img-01.jpg" alt="image"
-              width="255" height="282"/>
-            </a>
-            <div class="inner-desc clearfix">
-              <h3 class="subtitle"><a href="#">Blue tshirt</a></h3>
-              <p>&#36;26</p>
+      <section class="page-banner">
+        <div class="slider">
+          <div class="slider__overlay">
+            <img class="slider__overlay-img" src="./img/img-banner.jpg" alt="image" width="1600" height="600" />
+            <div class="container">
+              <div class="slider__desc-wrapper">
+                <h2 class="slider__desc-title">Affordable paris tours</h2>
+                <p class="slider__desc-text">
+                  City tours / tour tickets / tour guides
+                </p>
+                <div class="slider__btn-wrapper clearfix">
+                  <button class="slider__btn prev">
+                    <span class="visually-hidden">prev button</span>
+                  </button>
+                  <button class="slider__btn next">
+                    <span class="visually-hidden">next button</span>
+                  </button>
+                </div>
+              </div>
             </div>
-          </li>
+          </div>
+        </div>
+      </section>
 
-          <li class="collection-list-item">
-            <a href="#" >
-              <img class="collection-list-img" src="./img/img-02.jpg" alt="image"
-              width="255" height="282"/>
-            </a>
-            <div class="inner-desc clearfix">
-              <h3 class="subtitle"><a href="#">Woman shirt</a></h3>
-              <p>&#36;31</p>
-            </div>
-          </li>
+      <section class="page-collection">
+        <div class="container">
+          <h2 class="section-title">New collection</h2>
+          <ul class="collection__list clearfix">
+            <li class="collection__list-item">
+              <div class="collection__list-item-img-wrapper">
+                <a href="#" class="collection__list-item-link">
+                  <img class="collection__list-item-img" src="./img/img-01.jpg" alt="image" width="255" height="282"/>
+                </a>
 
-          <li class="collection-list-item">
-            <a href="#" >
-              <img class="collection-list-img" src="./img/img-03.jpg" alt="image"
-              width="255" height="282"/>
-            </a>
-            <div class="inner-desc clearfix">
-              <h3 class="subtitle"><a href="#">Yellow tshirt</a></h3>
-              <p>&#36;21</p>
-            </div>
-          </li>
+                <div class="collection__overlay-inner">
+                  <ul class="overlay__btn-list clearfix">
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn favorit">
+                        <span class="visually-hidden">favorit button</span>
+                      </button>
+                    </li>
 
-          <li class="collection-list-item">
-            <a href="#" >
-              <img class="collection-list-img" src="./img/img-04.jpg" alt="image"
-              width="255" height="282"/>
-            </a>
-            <div class="inner-desc clearfix">
-              <h3 class="subtitle"><a href="#">Cool lingerie</a></h3>
-              <p>&#36;56</p>
-            </div>
-          </li>
-        </ul>
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn compare">
+                        <span class="visually-hidden">compare button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn clock">
+                        <span class="visually-hidden">time button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn cart">add to card</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="collection__list-item-desc-wrapper clearfix">
+                <h3 class="collection__list-item-desc-wrapper-subtitle">
+                  <a class="collection__list-item-desc-wrapper-link" href="#"
+                    >Blue tshirt</a>
+                </h3>
+                <p class="collection__list-item-desc-wrapper-price">&#36;26</p>
+              </div>
+            </li>
+
+            <li class="collection__list-item">
+              <div class="collection__list-item-img-wrapper">
+                <a href="#" class="collection__list-item-link">
+                  <img class="collection__list-item-img" src="./img/img-02.jpg" alt="image" width="255" height="282"/>
+                </a>
+
+                <div class="collection__overlay-inner">
+                  <ul class="overlay__btn-list clearfix">
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn favorit">
+                        <span class="visually-hidden">favorit button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn compare">
+                        <span class="visually-hidden">compare button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn clock">
+                        <span class="visually-hidden">time button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn cart">add to card</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="collection__list-item-desc-wrapper clearfix">
+                <h3 class="collection__list-item-desc-wrapper-subtitle">
+                  <a class="collection__list-item-desc-wrapper-link" href="#"
+                    >Woman shirt</a
+                  >
+                </h3>
+                <p class="collection__list-item-desc-wrapper-price">&#36;31</p>
+              </div>
+            </li>
+
+            <li class="collection__list-item">
+              <div class="collection__list-item-img-wrapper">
+                <a href="#" class="collection__list-item-link">
+                  <img class="collection__list-item-img" src="./img/img-03.jpg" alt="image" width="255" height="282"/>
+                </a>
+
+                <div class="collection__overlay-inner">
+                  <ul class="overlay__btn-list clearfix">
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn favorit">
+                        <span class="visually-hidden">favorit button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn compare">
+                        <span class="visually-hidden">compare button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn clock">
+                        <span class="visually-hidden">time button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn cart">add to card</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="collection__list-item-desc-wrapper clearfix">
+                <h3 class="collection__list-item-desc-wrapper-subtitle">
+                  <a class="collection__list-item-desc-wrapper-link" href="#"
+                    >Yellow tshirt</a
+                  >
+                </h3>
+                <p class="collection__list-item-desc-wrapper-price">&#36;21</p>
+              </div>
+            </li>
+
+            <li class="collection__list-item">
+              <div class="collection__list-item-img-wrapper">
+                <a href="#" class="collection__list-item-link">
+                  <img class="collection__list-item-img" src="./img/img-04.jpg" alt="image" width="255" height="282" />
+                </a>
+
+                <div class="collection__overlay-inner">
+                  <ul class="overlay__btn-list clearfix">
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn favorit">
+                        <span class="visually-hidden">favorit button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn compare">
+                        <span class="visually-hidden">compare button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn clock">
+                        <span class="visually-hidden">time button</span>
+                      </button>
+                    </li>
+
+                    <li class="overlay__btn-list-item">
+                      <button class="overlay__btn cart">add to card</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="collection__list-item-desc-wrapper clearfix">
+                <h3 class="collection__list-item-desc-wrapper-subtitle">
+                  <a class="collection__list-item-desc-wrapper-link" href="#"
+                    >Cool lingerie</a
+                  >
+                </h3>
+                <p class="collection__list-item-desc-wrapper-price">&#36;56</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <p class="sections-description">All Rights Reserved &#169; Dokan &#10072; Designed
+          <a class="description-link" href="#">ThemenGraph</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

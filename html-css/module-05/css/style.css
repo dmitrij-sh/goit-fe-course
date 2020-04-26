@@ -115,7 +115,7 @@ body {
   width: 104px;
   height: 104px;
   border: none;
-  /* outline: none; */
+  outline: none;
   cursor: pointer;
   background-color: rgba(78, 196, 171, .65);
 }

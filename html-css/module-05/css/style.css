@@ -192,10 +192,6 @@ body {
   position: relative;
 }
 
-.collection__list-item-link {
-  display: block;
-}
-
 .collection__list-item-img {
   filter: grayscale(0.7);
 }

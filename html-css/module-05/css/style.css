@@ -70,6 +70,7 @@ body {
 .slider__overlay-img {
   height: 600px;
   object-fit: cover;
+  object-position: top;
 }
 
 .slider__overlay::before {

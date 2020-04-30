@@ -1,8 +1,6 @@
 *,
 * ::before,
 * ::after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 
@@ -10,19 +8,37 @@ html {
   box-sizing: border-box;
  }
 
- ul,
- ol {
-   list-style: none;
- }
 
  img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-a {
+a[class] {
+  display: block;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+p[class] {
+  /* font-size: 100%; */
+  /* font-weight: normal; */
+  margin: 0px;
+  padding: 0px;
 }
 
 .visually-hidden:not(:focus):not(:active),

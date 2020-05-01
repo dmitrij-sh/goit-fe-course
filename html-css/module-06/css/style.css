@@ -205,7 +205,7 @@ body {
 .overlay-team {
   box-shadow: 10px 10px 0px 0px
   rgb(149, 225, 211);
-  transition: 0.5s linear;
+  transition: 0.2s linear;
   opacity: 1;
 }
 

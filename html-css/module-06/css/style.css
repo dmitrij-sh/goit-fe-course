@@ -25,7 +25,7 @@ body {
   min-height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo[class="logo"] {
@@ -159,6 +159,8 @@ body {
 }
 
 .section-text {
+  margin: 0 auto;
+  max-width: 980px;
   margin-bottom: 92px;
   font-family: var(--ffrt);
   text-align: center;
@@ -236,7 +238,7 @@ body {
 }
 
 .social-list__item:not(:last-of-type) {
-margin-right: 1px;
+  margin-right: 1px;
 }
 
 .social-list__item-link {
@@ -271,5 +273,63 @@ margin-right: 1px;
 }
 
 .page-footer {
-  padding-top: 82px;
+  padding: 82px 0px 10px;
+}
+
+.footer-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid
+  rgb(229, 229, 229);
+}
+
+.footer-copy {
+  font-size: 14px;
+  line-height: var(--lh-auto);
+  color: var(--cr-dark);
+}
+
+.footer-link[class="footer-link"] {
+  display: inline-block;
+  text-transform: none;
+  color: rgb(243, 129, 129);
+}
+
+.subscribe-email {
+  outline: none;
+  padding: 0px;
+  border: 1px solid
+  rgb(231, 231, 231);
+  width: 234px;
+  height: 40px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-email::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  padding-left: 13px;
+  color: rgb(204, 204, 204);
+}
+
+.subscribe-btn {
+  display: block;
+  padding: 0px;
+  border: none;
+  background-color: rgb(149, 225, 211);
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
 }

@@ -149,3 +149,12 @@ body {
 .services__list-item-text {
   font-family: var(--ffrt);
 }
+
+.page-team {
+  padding-top: 100px;
+}
+
+.section-text {
+  font-family: var(--ffrt);
+  text-align: center;
+}

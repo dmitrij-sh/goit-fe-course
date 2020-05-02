@@ -7,6 +7,20 @@
   --lh-auto: 1.2;
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 body {
   margin: 0px;
   font-family: 'Montserrat', sans-serif;
@@ -34,6 +48,7 @@ body {
   line-height: var(--lh-auto);
   text-transform: none;
   color: rgb(149, 225, 211);
+  animation: fadeInDown .8s linear .5s;
 }
 
 .nav__list {
@@ -53,7 +68,7 @@ body {
 
 .nav__list-link::after {
   display: block;
-  width: 100%;
+  width: 0%;
   content: "";
   height: 3px;
   background-color: rgb(243, 129, 129);
@@ -65,6 +80,7 @@ body {
 }
 
 .nav__list-link:hover::after {
+  width: 100%;
   opacity: 1;
   visibility: visible;
 }

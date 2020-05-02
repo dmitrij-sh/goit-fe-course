@@ -48,26 +48,31 @@ body {
 .nav__list-link {
   position: relative;
   color: rgb(149, 225, 211);
-  transition: all 0.2s linear;
+  transition: color 0.2s linear;
 }
 
-.nav__list-link:hover:after {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.nav__list-link::after {
   display: block;
-  content: "";
-  margin-top: 12px;
   width: 100%;
+  content: "";
   height: 3px;
   background-color: rgb(243, 129, 129);
+  position: absolute;
+  bottom: -12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s linear;
+}
+
+.nav__list-link:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav__list-link:hover,
 .nav__list-link:focus {
   outline: none;
   color: rgb(243, 129, 129);
-  /* transition: 0.2s linear; */
 }
 
 .page-services {
@@ -200,19 +205,19 @@ body {
 .team__list-item:hover
 .team__list-item-img-wrapper {
   transform: translate(-10px, -10px);
-  transition: 0.2s linear;
 }
 
 .team__list-item:hover
 .overlay-team {
   box-shadow: 10px 10px 0px 0px
   rgb(149, 225, 211);
-  transition: 0.2s linear;
   opacity: 1;
+  visibility: visible;
 }
 
 .team__list-item-img-wrapper {
   position: relative;
+  transition: 0.2s linear;
 }
 
 .overlay-team {
@@ -228,6 +233,8 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  visibility: hidden;
+  transition: 0.2s linear;
 }
 
 .social-list {
@@ -247,13 +254,13 @@ body {
   background-color: rgb(252, 227, 138);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.2s linear;
 }
 
 .social-list__item-link:hover,
 .social-list__item-link:focus {
   outline: none;
   background-color: rgb(149, 225, 211);
-  transition: 0.2s linear;
 }
 
 .social-list__item-link-facebook {

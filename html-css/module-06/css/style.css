@@ -48,6 +48,7 @@ body {
 .nav__list-link {
   position: relative;
   color: rgb(149, 225, 211);
+  transition: all 0.2s linear;
 }
 
 .nav__list-link:hover:after {
@@ -60,14 +61,13 @@ body {
   width: 100%;
   height: 3px;
   background-color: rgb(243, 129, 129);
-  transition: all 0.8s linear;
 }
 
 .nav__list-link:hover,
 .nav__list-link:focus {
   outline: none;
   color: rgb(243, 129, 129);
-  transition: 0.2s linear;
+  /* transition: 0.2s linear; */
 }
 
 .page-services {
@@ -324,7 +324,6 @@ body {
   border: none;
   background-color: rgb(149, 225, 211);
   width: 150px;
-  height: 40px;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 700;

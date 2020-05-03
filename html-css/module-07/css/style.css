@@ -170,6 +170,7 @@ body {
 }
 
 .contact__form-textarea {
+  resize: none;
   padding: 0px;
   font-family: var(--ffks);
   font-size: 14px;

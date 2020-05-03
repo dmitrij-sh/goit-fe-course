@@ -15,6 +15,7 @@
   font-style: normal;
   font-weight: normal;
   src: url(../fonts/WisdomScript.otf);
+  opacity: ;
 }
 
 @font-face {
@@ -200,6 +201,7 @@ body {
   padding: 20px 0px 0px 20px;
   font-family: "Montserrat";
   font-weight: var(--fw-bold);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.025em;

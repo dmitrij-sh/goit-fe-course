@@ -1,0 +1,212 @@
+:root {
+  --ffrt: 'Roboto Slab', serif;
+  --ffks: 'Kaushan Script', cursive;
+  --cr-light: rgb(187, 187, 187);
+  --cr-dark: rgb(34, 34, 34);
+  --fs-mid: 16px;
+  --fs-big: 18px;
+  --lh-big: 41px;
+  --fw-bold: 700;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cr-light);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgb(119, 119, 119);
+}
+
+.container {
+  width: 940px;
+  margin: 0px auto;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+}
+
+.logo[class="logo"] {
+  font-family: var(--ffks);
+  font-size: 26px;
+  line-height: 41px;
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 485px;
+}
+
+.nav__list-link {
+  line-height: var(--lh-big);
+  color: var(--cr-dark)
+}
+
+.nav__list-link:hover,
+.nav__list-link:focus {
+  outline: none;
+  color: rgb(254, 209, 54);
+}
+
+.page-services {
+  padding: 110px 0px 122px;
+}
+
+.section-title {
+  font-size: 40px;
+  color: var(--cr-dark);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  line-height: 75px;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.section-text {
+  margin-bottom: 80px;
+  font-size: var(--fs-mid);
+  font-family: var(--ffks);
+  font-style: italic;
+  text-align: center;
+}
+
+.services__list-subtitle {
+  font-size: var(--fs-big);
+  color: var(--cr-dark);
+  font-weight: var(--fw-bold);
+  line-height: 75px;
+  letter-spacing: 0.025em;
+}
+
+.services__list-text {
+  font-family: var(--ffrt);
+  letter-spacing: 0.025em;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.services__list-item {
+  flex-basis: 290px;
+}
+
+.services__list-item::before {
+  margin: 0px auto;
+  display: block;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+}
+
+.services__list-icon-basket::before {
+  background-image: url(../img/icon-basket.png);
+}
+
+.services__list-icon-laptop::before {
+  background-image: url(../img/icon-laptop.png);
+}
+
+.services__list-icon-lock::before {
+  background-image: url(../img/icon-lock.png);
+}
+
+.page-contact {
+  padding: 110px 0px 114px;
+  width: 100%;
+  background: var(--cr-dark)
+  url(../img/map-img.png)
+  no-repeat
+  right bottom;
+}
+
+.title-white {
+  color: rgb(255, 255, 255);
+}
+
+.contact__form {
+  display: flex;
+  margin-bottom: 30px;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+.form-inner {
+  margin-right: 30px;
+  flex-basis: 455px;
+}
+
+.contact__form-control {
+  display: block;
+  padding: 0px;
+  font-family: var(--ffks);
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  color: var(--cr-light);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  width: 100%;
+  height: 54px;
+}
+
+.contact__form-control:not(:last-of-type) {
+  margin-bottom: 28px;
+}
+
+.contact__form-textarea {
+  padding: 0px;
+  font-family: var(--ffks);
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  color: var(--cr-light);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  width: 50%;
+}
+
+.contact__form-control::placeholder,
+.contact__form-textarea::placeholder {
+  padding: 20px 0px 0px 20px;
+  font-family: "Montserrat";
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+  color: var(--cr-light);
+  text-transform: uppercase;
+}
+
+.contact__form-btn {
+  margin: 0 auto;
+  padding: 24px 48px;
+  display: block;
+  padding: 0px;
+  min-width: 240px;
+  height: 66px;
+  font-family: "Montserrat";
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-big);
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  cursor: pointer;
+}

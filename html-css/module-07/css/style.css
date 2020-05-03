@@ -48,7 +48,8 @@ body {
 
 .nav__list-link {
   line-height: var(--lh-big);
-  color: var(--cr-dark)
+  color: var(--cr-dark);
+  transition: color 0.2s linear;
 }
 
 .nav__list-link:hover,
@@ -193,6 +194,16 @@ body {
   text-transform: uppercase;
 }
 
+.contact__form-control:invalid,
+.contact__form-textarea:invalid {
+  outline-color: rgb(255, 0, 0);
+}
+
+.contact__form-control:valid,
+.contact__form-textarea:valid {
+  outline-color: rgb(118, 255, 3);
+}
+
 .contact__form-btn {
   margin: 0 auto;
   padding: 24px 48px;
@@ -210,4 +221,11 @@ body {
   border-radius: 3px;
   background-color: rgb(254, 209, 54);
   cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.contact__form-btn:hover,
+.contact__form-btn:focus {
+  background-color: rgb(251, 192, 45);
+  transform: scale(1.05);
 }

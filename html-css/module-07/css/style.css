@@ -244,16 +244,3 @@ body {
   background-color: rgb(251, 192, 45);
   transform: scale(1.05);
 }
-.Your_Message {
-  font-size: 14px;
-  font-family: "Montserrat";
-  color: rgb(187, 187, 187);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 734.935px;
-  top: 913.6px;
-  z-index: 11;
-}

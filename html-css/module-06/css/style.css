@@ -192,7 +192,9 @@ body {
 }
 
 .team__list-item-img-wrapper {
+  position: relative;
   margin-bottom: 30px;
+  transition: 0.2s linear;
 }
 
 .team__list-item-name {
@@ -228,12 +230,7 @@ body {
   box-shadow: 10px 10px 0px 0px
   rgb(149, 225, 211);
   opacity: 1;
-  visibility: visible;
-}
-
-.team__list-item-img-wrapper {
-  position: relative;
-  transition: 0.2s linear;
+  /* visibility: visible; */
 }
 
 .overlay-team {
@@ -249,8 +246,8 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  visibility: hidden;
-  transition: 0.2s linear;
+  /* visibility: hidden; */
+  transition: opacity 0.2s linear;
 }
 
 .social-list {

@@ -1,0 +1,108 @@
+:root {
+  --ffrt: 'Roboto', sans-serif;
+  --cr-white: rgb(255, 255, 255);
+  --cr-light: rgb(102, 102, 102);
+  --cr-dark: rgb(51, 51, 51);
+  --fs-small: 22px;
+  --fs-mid: 24px;
+  --fs-big: 52px;
+  --fw-light: 300;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Montserrat', "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--cr-dark);
+}
+
+.container {
+  width: 940px;
+  margin: 0px auto;
+}
+
+.page-header {
+  padding: 38px 0px 234px;
+  background-color: rgb(26, 25, 21);
+  background-image: url(../img/bg2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.nav-menu {
+  margin-bottom: 154px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--cr-white);
+  letter-spacing: 0.05em;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__list-btn {
+  display: block;
+  padding: 0px;
+  width: 94px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cr-white);
+  cursor: pointer;
+}
+
+.nav__list-btn:hover,
+.nav__list-btn:focus {
+  border: 2px solid var(--cr-white);
+  border-radius: 25px;
+}
+
+.header-title[class="header-title"] {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 52px;
+  color: var(--cr-white);
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.header-title-span {
+  display: block;
+}
+
+.header-text[class="header-text"] {
+  margin-bottom: 38px;
+  text-align: center;
+  font-family: var(--ffrt);
+  font-size: var(--fs-mid);
+  font-weight: var(--fw-light);
+  color: var(--cr-white);
+  overflow: hidden;
+}
+
+.header-link[class="header-link"] {
+  margin: 0px auto;
+  padding: 14px;
+  width: 225px;
+  height: 40px;
+  color: var(--cr-white);
+  text-transform: none;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgb(255, 78, 80);
+}

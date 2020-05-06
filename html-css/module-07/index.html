@@ -67,17 +67,16 @@
           <h2 class="section-title title-white">Contact us</h2>
           <p class="section-text">Proin iaculis purus consequat sem cure.</p>
           <form class="contact__form" action="#">
-            <div class="form-inner">
-              <input class="contact__form-control" type="text" name="name"
-              placeholder="you name *" required>
-              <input class="contact__form-control" type="email" name="email"
-              placeholder="your e-mail *" required>
-              <input class="contact__form-control" type="text" name="subject"
-              placeholder="subject">
+            <div class="contact__form-block">
+              <input class="contact__form-input" type="text" name="user_name" minlength="2"
+              placeholder="you name...*" required>
+              <input class="contact__form-input" type="email" name="user_email"
+              placeholder="your e-mail...*" required>
+              <input class="contact__form-input" type="text" name="subject"
+              placeholder="subject" required>
             </div>
 
-            <textarea class="contact__form-textarea" name="message"
-            placeholder="your message *" required></textarea>
+            <textarea class="contact__form-textarea" name="user_message" placeholder="your message...*" required></textarea>
           </form>
           <button class="contact__form-btn" type="submit">send message</button>
         </div>

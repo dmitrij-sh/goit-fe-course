@@ -95,20 +95,29 @@ body {
   overflow: hidden;
 }
 
-.header-link[class="header-link"] {
+.header-link {
   margin: 0px auto;
-  padding: 14px;
+  padding: 10px 0px;
   width: 225px;
   height: 40px;
-  color: var(--cr-white);
-  text-transform: none;
   border-radius: 25px;
   overflow: hidden;
+  text-align: center;
+}
+
+.header-link-first {
   background-color: rgb(255, 78, 80);
+  color: var(--cr-white);
+}
+
+.header-link-second {
+  background-color: var(--cr-white);
+  border: 2px solid rgb(255, 78, 80);
+  color: rgb(255, 78, 80);
 }
 
 .page-partner {
-  padding: 74px 0px 0px;
+  padding: 74px 0px 72px;
 }
 
 .section-title {

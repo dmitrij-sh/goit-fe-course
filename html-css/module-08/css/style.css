@@ -63,7 +63,7 @@ body {
 
 .logo {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--cr-white);
   letter-spacing: 0.0625rem;
 }

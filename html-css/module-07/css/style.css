@@ -149,7 +149,7 @@ body {
   background: var(--cr-dark)
   url(../img/map-img.png)
   no-repeat
-  right bottom;
+  right bottom 20px;
 }
 
 .title-white {

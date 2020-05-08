@@ -1,18 +1,40 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url(../fonts/montserrat-v14-latin-700.woff2) format('woff2'),
+  url(../fonts/montserrat-v14-latin-700.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+  url(../fonts/roboto-v20-latin-300.woff2) format('woff2'),
+  url(../fonts/roboto-v20-latin-300.woff) format('woff');
+}
+
 :root {
   --ffrt: 'Roboto', sans-serif;
   --cr-white: rgb(255, 255, 255);
   --cr-light: rgb(102, 102, 102);
   --cr-dark: rgb(51, 51, 51);
-  --fs-small: 22px;
-  --fs-mid: 24px;
-  --fs-big: 52px;
+  --fs-small: 1.375rem;
+  --fs-mid: 1.5rem;
+  --fs-big: 3.25rem;
   --fw-light: 300;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   margin: 0px;
-  font-family: 'Montserrat', "Roboto", sans-serif;
-  font-size: 14px;
+  font-family: 'Montserrat',  sans-serif;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--cr-dark);
@@ -26,7 +48,7 @@ body {
 .page-header {
   padding: 38px 0px 234px;
   background-color: rgb(26, 25, 21);
-  background-image: url(../img/bg2.png);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -40,10 +62,10 @@ body {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: var(--cr-white);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.0625rem;
 }
 
 .nav__list {
@@ -60,10 +82,13 @@ body {
   border: none;
   background-color: transparent;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--cr-white);
   cursor: pointer;
+  box-shadow:
+  0px 1px 3px rgba(0,0,0, .12),
+  0px 1px 2px rgba(0,0,0, .24);
 }
 
 .nav__list-btn:hover,
@@ -75,7 +100,7 @@ body {
 .header-title[class="header-title"] {
   margin-bottom: 40px;
   text-align: center;
-  font-size: 52px;
+  font-size: 3.25rem;
   color: var(--cr-white);
   text-transform: uppercase;
   overflow: hidden;

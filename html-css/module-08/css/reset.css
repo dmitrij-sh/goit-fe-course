@@ -21,7 +21,7 @@ a[class] {
   /*text-transform: uppercase;*/
 }
 
-ul[class],
+ul,
 ol[class] {
   list-style: none;
   padding: 0px;

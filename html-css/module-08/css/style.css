@@ -44,6 +44,7 @@ body {
   max-width: 940px;
   width: 320px;
   margin: 0px auto;
+  padding: 0px 10px;
 }
 
 .page-header {
@@ -78,12 +79,15 @@ body {
   color: var(--cr-white);
   outline: none;
   cursor: pointer;
+  transition: 0.2s linear;
 }
 
 .nav__list-btn:hover,
 .nav__list-btn:focus {
   border: 2px solid var(--cr-white);
   border-radius: 25px;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0, .5);
+  transform: scale(1.05);
 }
 
 .logo {
@@ -118,22 +122,37 @@ body {
 .header-link {
   margin: 0px auto;
   padding: 10px 0px;
-  width: 280px;
-  height: 40px;
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
+  transition: all 0.3s linear;
 }
 
 .header-link-first {
+  width: 280px;
+  height: 40px;
   background-color: rgb(255, 78, 80);
   color: var(--cr-white);
 }
 
 .header-link-second {
+  width: 284px;
+  height: 44px;
   background-color: var(--cr-white);
   border: 2px solid rgb(255, 78, 80);
   color: rgb(255, 78, 80);
+}
+
+.header-link-first:hover,
+.header-link-first:focus {
+  background-color: var(--cr-white);
+  color: rgb(255, 78, 80);
+}
+
+.header-link-second:hover,
+.header-link-second:focus {
+  background-color: rgb(255, 78, 80);
+  color: var(--cr-white);
 }
 
 .page-partner {

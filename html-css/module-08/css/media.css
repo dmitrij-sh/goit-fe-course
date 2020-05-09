@@ -61,6 +61,14 @@
     margin-bottom: 38px;
   }
 
+  .header-link-first {
+    width: 225px;
+  }
+
+  .header-link-second {
+    width: 196px;
+  }
+
   .section-title {
     margin-bottom: 36px;
   }

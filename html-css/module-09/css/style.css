@@ -28,7 +28,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -42,15 +42,20 @@ body {
 
 .container {
   max-width: 940px;
-  width: 320px;
-  margin: 0px auto;
-  padding: 0px 10px;
+  min-width: 320px;
+  /* margin: 0px auto;
+  padding: 0px 10px; */
 }
 
-.page-header {
+.box {
+  background-color: teal;
+  outline: 1px solid grey;
+}
+
+/* .page-header {
   padding: 20px 0px 138px;
   background-color: rgb(26, 25, 21);
-  background-image: url(../img/bg-phone.png);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -220,4 +225,4 @@ body {
   font-family: var(--ffrt);
   font-weight: var(--fw-light);
   color: var(--cr-light);
-}
+} */

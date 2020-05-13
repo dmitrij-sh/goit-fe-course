@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .nav__list {
     margin-bottom: 118px;
   }
@@ -85,11 +85,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
-  .page-header {
-    background-image: url(../img/bg-tab.png);
-  }
-
+@media (min-width: 768px) and (max-width: 939px) {
   .header-text[class="header-text"] {
     font-size: var(--fs-small);
   }
@@ -109,11 +105,7 @@
   }
 }
 
-@media (min-width: 960px) {
-  .page-header {
-    background-image: url(../img/bg.png);
-  }
-
+@media (min-width: 940px) {
   .container {
     width: 100%;
   }

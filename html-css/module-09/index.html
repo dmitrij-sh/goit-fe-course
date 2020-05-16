@@ -3,106 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw-08</title>
+    <title>hw-09</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.cs">
+    <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
-
-    <header page-header>
+    <header class="page-header">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-6 col-md-3">
-            <div class="menu">menu</div>
+        <div class="row">
+          <div class="col-12 nav-menu-mb">
+            <nav class="nav-menu">
+              <div class="row flex-md-row-reverse justify-content-md-between">
+                <div class="col-12 col-md-3 nav__list-mb">
+                  <ul class="nav__list d-flex justify-content-sm-center">
+                    <li class="nav__list-item">
+                      <button class="nav__list-btn btn-left" type="submit">
+                        Log in
+                      </button>
+                    </li>
+
+                    <li class="nav__list-item">
+                      <button class="nav__list-btn btn-right" type="submit">
+                        Sign up
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <a class="logo" href="#">urlaubsglück</a>
+                </div>
+              </div>
+            </nav>
           </div>
-          <div class="col-6 col-md-12">
-            <div class="list">list</div>
+
+          <div class="col-12 header-title-mb">
+            <h1 class="header-title">share you holiday dreams</h1>
+          </div>
+
+          <div class="col-12 header-text-mb">
+            <p class="header-text">And find the perfect partner to fullfill it</p>
+          </div>
+
+          <div class="col-12">
+            <a class="header-link header-link-first" href="#">Find your holiday partner</a>
           </div>
         </div>
       </div>
-
     </header>
 
-
-    <!-- <header class="page-header">
-      <div class="container">
-        <nav class="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__list-item">
-              <button class="nav__list-btn btn-left" type="submit">
-                Log in
-              </button>
-            </li>
-
-            <li class="nav__list-item">
-              <button class="nav__list-btn btn-right" type="submit">
-                Sign up
-              </button>
-            </li>
-          </ul>
-
-          <a class="logo" href="#">urlaubsglück</a>
-        </nav>
-        <h1 class="header-title"> share your holiday dreams </h1>
-        <p class="header-text">And find the perfect partner to fullfill it</p>
-        <a class="header-link header-link-first" href="#">Find your holiday partner</a>
-      </div>
-    </header>
     <main class="page-main">
       <section class="page-partner">
         <div class="container">
-          <h2 class="section-title">Meet a partner for your best holiday</h2>
-          <ul class="partner__list">
-            <li class="partner__list-item">
-              <div class="partner__list-img-wrapper partner__list-icon-tv">
-                <img class="partner__list-img" src="./img/img-01.jpg" alt="image" width="124" height="124"/>
-              </div>
+          <div class="row justify-content-md-center">
+            <div class="col-12 section-title-mb">
+              <h2 class="section-title">Meet a partner for your best holiday</h2>
+            </div>
 
-              <p class="partner__list-name">Bradley Hunter</p>
-              <p class="partner__list-desc">
-                Based in Chicago. I love playing tennis and loud music.
-              </p>
-            </li>
+            <div class="col-12 col-md-8 col-lg-12 partner__list-mb">
+              <ul class="row partner__list">
+                <li class="col-12 col-md-6 col-lg-3 partner__list-item">
+                  <div class="partner__list-img-wrapper partner__list-icon-tv">
+                    <img class="partner__list-img" src="./img/img-01.jpg" alt="image" width="124" height="124"/>
+                  </div>
 
-            <li class="partner__list-item">
-              <div class="partner__list-img-wrapper partner__list-icon-coffee">
-                <img class="partner__list-img" src="./img/img-02.jpg" alt="image" width="124" height="124"/>
-              </div>
+                  <p class="partner__list-name">Bradley Hunter</p>
+                  <p class="partner__list-desc">
+                    Based in Chicago. I love playing tennis and loud music.
+                  </p>
+                </li>
 
-              <p class="partner__list-name">Heather Walker</p>
-              <p class="partner__list-desc">
-                I'm a happy person that loves cats and climbing on mountains.
-              </p>
-            </li>
+                <li class="col-12 col-md-6 col-lg-3 partner__list-item">
+                  <div class="partner__list-img-wrapper partner__list-icon-coffee">
+                    <img class="partner__list-img" src="./img/img-02.jpg" alt="image" width="124" height="124"/>
+                  </div>
 
-            <li class="partner__list-item">
-              <div class="partner__list-img-wrapper partner__list-icon-flask">
-                <img class="partner__list-img" src="./img/img-03.jpg" alt="image" width="124" height="124"/>
-              </div>
+                  <p class="partner__list-name">Heather Walker</p>
+                  <p class="partner__list-desc">
+                    I'm a happy person that loves cats and climbing on mountains.
+                  </p>
+                </li>
 
-              <p class="partner__list-name">Lucas Marsha</p>
-              <p class="partner__list-desc">
-                I get my inspiration from nature and objects around me. I have a
-                passion to colours, typography and skateboards.
-              </p>
-            </li>
+                <li class="col-12 col-md-6 col-lg-3 partner__list-item">
+                  <div class="partner__list-img-wrapper partner__list-icon-flask">
+                    <img class="partner__list-img" src="./img/img-03.jpg" alt="image" width="124" height="124"/>
+                  </div>
 
-            <li class="partner__list-item">
-              <div class="partner__list-img-wrapper partner__list-icon-telegram">
-                <img class="partner__list-img" src="./img/img-04.jpg" alt="image" width="124" height="124"/>
-              </div>
-              <p class="partner__list-name">Bradley Hunter</p>
-              <p class="partner__list-desc">
-                Based in Chicago. I love playing tennis and loud music.
-              </p>
-            </li>
-          </ul>
+                  <p class="partner__list-name">Lucas Marsha</p>
+                  <p class="partner__list-desc">
+                    I get my inspiration from nature and objects around me. I have a
+                    passion to colours, typography and skateboards.
+                  </p>
+                </li>
 
-          <a class="header-link header-link-second" href="#">See other partners</a>
+                <li class="col-12 col-md-6 col-lg-3 partner__list-item">
+                  <div class="partner__list-img-wrapper partner__list-icon-telegram">
+                    <img class="partner__list-img" src="./img/img-04.jpg" alt="image" width="124" height="124"/>
+                  </div>
+                  <p class="partner__list-name">Bradley Hunter</p>
+                  <p class="partner__list-desc">
+                    Based in Chicago. I love playing tennis and loud music.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12">
+              <a class="header-link header-link-second" href="#">See other partners</a>
+            </div>
+          </div>
         </div>
       </section>
-    </main> -->
+    </main>
   </body>
 </html>

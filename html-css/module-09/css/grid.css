@@ -9,30 +9,30 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
   margin-right: auto;
   margin-left: auto;
 }
 
 /*576-540*/
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 320px;
+    max-width: 33.75rem;
   }
-} */
+}
 
 /*768-720*/
 @media (min-width: 768px) {
   .container {
-    max-width: 660px;
+    max-width: 41.25rem;
   }
 }
 
 /*992-960*/
 @media (min-width: 960px) {
   .container {
-    max-width: 940px;
+    max-width: 58.75rem;
   }
 }
 
@@ -49,8 +49,8 @@ html {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -58,23 +58,23 @@ html {
 /*576-540*/
 /* @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 400px;
+    max-width: 540px;
   }
 } */
 
 /*768-720*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 660px;
+    max-width: 720px;
   }
-}
+} */
 
 /*992-960*/
-@media (min-width: 960px) {
+/* @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 940px;
+    max-width: 960px;
   }
-}
+} */
 
 /*1200-1140*/
 /*@media (min-width: 1200px) {
@@ -818,7 +818,7 @@ html {
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -982,7 +982,7 @@ html {
   .offset-xl-11 {
     margin-left: 91.666667%;
   }
-}*/
+}
 
 .d-none {
   display: none !important;
@@ -1112,7 +1112,7 @@ html {
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .d-xl-none {
     display: none !important;
   }
@@ -1140,7 +1140,7 @@ html {
   .d-xl-inline-flex {
     display: inline-flex !important;
   }
-}*/
+}
 
 .flex-row {
   flex-direction: row !important;
@@ -1595,7 +1595,7 @@ html {
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .flex-xl-row {
     flex-direction: row !important;
   }
@@ -1698,7 +1698,7 @@ html {
   .align-self-xl-stretch {
     align-self: stretch !important;
   }
-}*/
+}
 
 .m-0 {
   margin: 0 !important;
@@ -3168,7 +3168,7 @@ html {
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -3511,4 +3511,4 @@ html {
   .mx-xl-auto {
     margin-left: auto !important;
   }
-}*/
+}

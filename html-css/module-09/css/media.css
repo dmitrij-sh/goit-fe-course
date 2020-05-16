@@ -1,20 +1,20 @@
 @media (max-width: 767px) {
   .nav-menu-mb {
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
   }
 
   .nav__list-mb {
-    margin-bottom: 118px;
+    margin-bottom: 7.375rem;
   }
 
   .header-title-mb {
-    margin-bottom: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-bottom: 1.25rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   .header-title {
-    max-width: 320px;
+    max-width: 20rem;
     margin-right: auto;
     margin-left: auto;
   }
@@ -22,25 +22,25 @@
   .header-text {
     margin-left: auto;
     margin-right: auto;
-    max-width: 220px;
+    max-width: 13.75rem;
   }
 
   .header-text-mb {
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
   }
 
   .page-partner {
-    padding-bottom: 56px;
+    padding-bottom: 3.5rem;
   }
 
   .section-title {
-    max-width: 270px;
+    max-width: 16.875rem;
     margin-left: auto;
     margin-right: auto;
   }
 
   .partner__list-item:not(:last-of-type) {
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
   }
 
   .partner__list-desc {
@@ -49,51 +49,51 @@
   }
 
   .partner__list-mb {
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
   }
 }
 
 @media (min-width: 768px) {
   .page-header {
-    padding-top: 38px;
-    padding-bottom: 234px;
+    padding-top: 2.375rem;
+    padding-bottom: 14.625rem;
   }
 
   .nav-menu-mb {
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
   }
 
   .header-title-mb {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .header-title {
-    font-size: 52px;
-    max-width: 505px;
+    font-size: 3.25rem;
+    max-width: 31.5625rem;
   }
 
   .header-text-mb {
-    margin-bottom: 38px;
+    margin-bottom: 2.375rem;
   }
 
   .header-text {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .header-link-first {
-    max-width: 225px;
+    max-width: 14.0625rem;
   }
 
   .section-title-mb {
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
   }
 
   .partner__list-mb {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .header-link-second {
-    max-width: 196px;
+    max-width: 12.25rem;
   }
 }
 
@@ -103,11 +103,11 @@
   }
 
   .partner__list-item:not(:nth-last-of-type(-n+2)) {
-    margin-bottom: 58px;
+    margin-bottom: 3.625rem;
   }
 
   .page-partner {
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -117,6 +117,6 @@
   }
 
   .page-partner {
-    padding-bottom: 72px;
+    padding-bottom: 4.5rem;
   }
 }

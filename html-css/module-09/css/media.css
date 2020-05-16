@@ -51,21 +51,6 @@
   .partner__list-mb {
     margin-bottom: 28px;
   }
-
-
-
-
-
-
-
-  /*
-  .page-partner {
-    padding-bottom: 56px;
-  }
-
-  .partner__list-item {
-    margin: 0px auto;
-  }*/
 }
 
 @media (min-width: 768px) {
@@ -110,17 +95,6 @@
   .header-link-second {
     max-width: 196px;
   }
-
-
-
-
-
-
-  /*
-
-  .partner__list-item {
-    flex-basis: 220px;
-  } */
 }
 
 @media (min-width: 768px) and (max-width: 959px) {

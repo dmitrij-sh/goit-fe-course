@@ -44,7 +44,7 @@
 
 :root {
   --ffrt: 'Roboto', sans-serif;
-  --ffrt: 'Kaushan Script', sans-serif;
+  --ffks: 'Kaushan Script', sans-serif;
   --cr-white: rgb(255, 255, 255);
   --cr-light: rgb(153, 153, 153);
   --cr-dark: rgb(51, 51, 51);
@@ -71,4 +71,82 @@ body {
 .container {
   max-width: 1200px;
   margin: 0px auto;
+}
+
+.page-header {
+  padding: 30px 0px 230px;
+  background-image: linear-gradient( 0deg,
+  rgba(252,227,138, .9) 0%,
+  rgba(243,129,129, .9) 100%),
+  url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  margin-bottom: 198px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 610px;
+}
+
+.logo {
+  font-size: var(--fs-big);
+  color: var(--cr-white);
+}
+
+.nav__link {
+  font-weight: var(--fw-regular);
+  color: var(--cr-white);
+  text-transform: uppercase;
+  transition: 0.2s linear;
+}
+
+.nav__link:hover {
+    color: rgb(252, 227, 138);
+    padding-bottom: 12px;
+    border-bottom: 3px solid rgb(252, 227, 138);
+    width: 100%;
+
+}
+
+.header__subtitle {
+  margin: 0px auto 46px;
+  max-width: 580px;
+  font-family: var(--ffks);
+  font-size: 72px;
+  color: var(--cr-white);
+  text-align: center;
+  overflow: hidden;
+}
+
+.header__title {
+  margin: 0px auto 112px;
+  max-width: 820px;
+  font-size: 150px;
+  font-weight: 700;
+  color: var(--cr-white);
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header__btn {
+  margin: 0px auto;
+  padding: 14px 30px;
+  width: 170px;
+  height: 50px;
+  border: 3px solid var(--cr-white);
+  color: var(--cr-white);
+  background-color: transparent;
+  text-transform: uppercase;
+  overflow: hidden;
 }

@@ -67,3 +67,8 @@ body {
   line-height: 1.2;
   color: var(--cr-dark);
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}

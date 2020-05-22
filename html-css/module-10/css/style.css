@@ -111,11 +111,10 @@ body {
 }
 
 .nav__link:hover {
-    color: rgb(252, 227, 138);
-    padding-bottom: 12px;
-    border-bottom: 3px solid rgb(252, 227, 138);
-    width: 100%;
-
+  color: rgb(252, 227, 138);
+  padding-bottom: 12px;
+  border-bottom: 3px solid rgb(252, 227, 138);
+  width: 100%;
 }
 
 .header__subtitle {
@@ -149,4 +148,101 @@ body {
   background-color: transparent;
   text-transform: uppercase;
   overflow: hidden;
+}
+
+.services {
+  padding-top: 54px;
+}
+
+.section-title__subtitle {
+  margin-bottom: 20px;
+  display: block;
+  font-family: var(--ffks);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-mid);
+  text-transform: none;
+}
+
+.section-title {
+  margin-bottom: 64px;
+  font-size: var(--fs-big);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  margin: 42px auto 0px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services__item {
+  padding-left: 82px;
+  flex-basis: 382px;
+  background-position: left 20px top;
+  background-repeat: no-repeat;
+}
+
+.services__item:not(:nth-last-of-type(-n+3)) {
+  margin-bottom: 100px;
+}
+
+.services__item--icon-alarm {
+  background-image: url(../img/icon/icon-alarm.svg);
+}
+
+.services__item--icon-line {
+  background-image: url(../img/icon/icon-line.svg);
+}
+
+.services__item--icon-computer {
+  background-image: url(../img/icon/icon-computer.svg);
+}
+
+.services__item--icon-book {
+  background-image: url(../img/icon/icon-book.svg);
+}
+
+.services__item--icon-home {
+  background-image: url(../img/icon/icon-home.svg);
+}
+
+.services__item--icon-digital {
+  background-image: url(../img/icon/icon-digital.svg);
+}
+
+.services__title {
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.services__text {
+  font-family: var(--ffrt);
+  font-size: var(--fs-small);
+  line-height: 24px;
+  color: var(--cr-light);
+}
+
+.team {
+  padding-top: 98px;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .page-header {
+    background-image: linear-gradient( 0deg,
+  rgba(252,227,138, .9) 0%,
+  rgba(243,129,129, .9) 100%),
+  url(../img/bg@2x.jpg);
+  }
 }

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw-10</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -37,11 +37,21 @@
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">basket</a>
+              <button class="nav__btn" type="submit">
+                <span class="visually-hidden">shopping cart</span>
+                <svg class="nav__btn-icon">
+                  <use href="./img/symbol-defs.svg#icon-shop"></use>
+                </svg>
+              </button>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">serch</a>
+              <button class="nav__btn" type="submit">
+                <span class="visually-hidden">search</span>
+                <svg class="nav__btn-icon">
+                  <use href="./img/symbol-defs.svg#icon-serch"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </nav>
@@ -56,7 +66,8 @@
       <section class="services">
         <div class="container">
           <h2 class="section-title">
-            <span class="section-title__subtitle">We work with</span>amazing services
+            <span class="section-title__subtitle">We work with</span>amazing
+            services
           </h2>
 
           <ul class="services__list">
@@ -88,7 +99,7 @@
               </p>
             </li>
 
-            <li class="services__item services__item--icon-home ">
+            <li class="services__item services__item--icon-home">
               <h3 class="services__title">css&#8725;html</h3>
               <p class="services__text">
                 Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
@@ -108,15 +119,180 @@
       <section class="team">
         <div class="container">
           <h2 class="section-title">
-            <span class="section-title__subtitle">Who we are</span>Meet our team</h2>
+            <span class="section-title__subtitle">Who we are</span>Meet our team
+          </h2>
+
           <p class="section-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-        </div>
 
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__wrapper">
+                <img class="team__item-img"
+                  srcset="
+                  ./img/img-01-380x470.jpg 380w,
+                  ./img/img-01-760x940@2x.jpg 760w"
+                  sizes="(max-width: 768px) 380px"
+                  src="./img/img-01-380x470.jpg"
+                  alt="image"/>
+
+                <div class="team__overlay">
+                  <ul class="social">
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">facebook</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">twitter</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">pinterest</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">instagram</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="team__item-name">Matthew Dix</p>
+              <p class="team__item-position">Graphic Design</p>
+            </li>
+
+            <li class="team__item">
+              <div class="team__wrapper">
+                <img class="team__item-img"
+                  srcset="
+                  ./img/img-02-380x470.jpg 380w,
+                  ./img/img-02-760x940@2x.jpg 760w"
+                  sizes="(max-width: 768px) 380px"
+                  src="./img/img-01-380x470.jpg"
+                  alt="image"/>
+
+                <div class="team__overlay">
+                  <ul class="social">
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">facebook</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">twitter</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">pinterest</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">instagram</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="team__item-name">Christopher Campbell</p>
+              <p class="team__item-position">Branding&#8725;UX design</p>
+            </li>
+
+            <li class="team__item">
+              <div class="team__wrapper">
+                <img class="team__item-img"
+                  srcset="
+                  ./img/img-03-380x470.jpg 380w,
+                  ./img/img-03-760x940@2x.jpg 760w"
+                  sizes="(max-width: 768px) 380px"
+                  src="./img/img-01-380x470.jpg"
+                  alt="image"/>
+
+                <div class="team__overlay">
+                  <ul class="social">
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">facebook</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">twitter</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">pinterest</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <span class="visually-hidden">instagram</span>
+                        <svg class="social__icon">
+                          <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="team__item-name">Michael Fertig</p>
+              <p class="team__item-position">Developer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>

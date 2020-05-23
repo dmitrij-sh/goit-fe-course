@@ -187,29 +187,6 @@ body {
   text-align: center;
 }
 
-.team__list-item {
-  text-align: center;
-}
-
-.team__list-item-img-wrapper {
-  position: relative;
-  margin-bottom: 30px;
-  transition: 0.2s linear;
-}
-
-.team__list-item-name {
-  margin-bottom: 14px;
-  font-size: 14px;
-  line-height: var(--lh-auto);
-  color: var(--cr-dark);
-}
-
-.team__list-item-position {
-  font-family: var(--ffrt);
-  font-weight: 300;
-  font-style: italic;
-}
-
 .team__list {
   display: flex;
   flex-wrap: wrap;
@@ -218,6 +195,7 @@ body {
 
 .team__list-item {
   flex-basis: 382px;
+  text-align: center;
 }
 
 .team__list-item:hover
@@ -231,6 +209,12 @@ body {
   rgb(149, 225, 211);
   opacity: 1;
   /* visibility: visible; */
+}
+
+.team__list-item-img-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  transition: 0.2s linear;
 }
 
 .overlay-team {
@@ -290,6 +274,19 @@ body {
 
 .social-list__item-link-instagram {
   background-image: url(../img/social/icon-instagram.png)
+}
+
+.team__list-item-name {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: var(--lh-auto);
+  color: var(--cr-dark);
+}
+
+.team__list-item-position {
+  font-family: var(--ffrt);
+  font-weight: 300;
+  font-style: italic;
 }
 
 .page-footer {

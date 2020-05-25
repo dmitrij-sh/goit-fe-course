@@ -14,40 +14,40 @@
         <nav class="nav">
           <a href="#" class="logo">MoGo</a>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">about</a>
+          <ul class="navigation nav__navigation">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">about</a>
             </li>
 
-            <li class="nav__item">
-              <a href="#servis" class="nav__link">service</a>
+            <li class="navigation__item">
+              <a href="#servis" class="navigation__link">service</a>
             </li>
 
-            <li class="nav__item">
-              <a href="#" class="nav__link">work</a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">work</a>
             </li>
 
-            <li class="nav__item">
-              <a href="#" class="nav__link">blog</a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">blog</a>
             </li>
 
-            <li class="nav__item">
-              <a href="#" class="nav__link">contact</a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">contact</a>
             </li>
 
-            <li class="nav__item">
-              <button class="nav__btn" type="submit">
+            <li class="navigation__item">
+              <button class="navigation__btn" type="submit">
                 <span class="visually-hidden">shopping cart</span>
-                <svg class="nav__btn-icon">
+                <svg class="navigation__btn-icon">
                   <use href="./img/symbol-defs.svg#icon-shop"></use>
                 </svg>
               </button>
             </li>
 
-            <li class="nav__item">
-              <button class="nav__btn" type="submit">
+            <li class="navigation__item">
+              <button class="navigation__btn" type="submit">
                 <span class="visually-hidden">search</span>
-                <svg class="nav__btn-icon">
+                <svg class="navigation__btn-icon">
                   <use href="./img/symbol-defs.svg#icon-serch"></use>
                 </svg>
               </button>
@@ -55,67 +55,85 @@
           </ul>
         </nav>
 
-        <p class="header__subtitle">Creative Template</p>
-        <h1 class="header__title">welcome to mogo</h1>
+        <p class="main-title header__subtitle">Creative Template</p>
+        <h1 class="main-title header__title">welcome to mogo</h1>
         <a href="#" class="header__btn">learn more</a>
       </div>
     </header>
 
     <main class="page-main">
-      <section class="services" id="servis">
+      <section class="section services" id="servis">
         <div class="container">
           <h2 class="section-title">
             <span class="section-title__subtitle">We work with</span>amazing
             services
           </h2>
 
-          <ul class="services__list">
-            <li class="services__item services__item--icon-alarm">
-              <h3 class="services__title">photography</h3>
-              <p class="services__text">
+          <ul class="section__list">
+            <li class="services__item">
+              <svg class="services__icon">
+                <use href="./img/symbol-defs.svg#icon-alarm"></use>
+              </svg>
+              <h3 class="services__item-title">photography</h3>
+              <p class="services__item-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
             </li>
 
-            <li class="services__item services__item--icon-line">
-              <h3 class="services__title">web design</h3>
-              <p class="services__text">
+            <li class="services__item">
+              <svg class="services__icon">
+                <use href="./img/symbol-defs.svg#icon-line"></use>
+              </svg>
+              <h3 class="services__item-title">web design</h3>
+              <p class="services__item-text">
                 Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
             </li>
 
-            <li class="services__item services__item--icon-computer">
-              <h3 class="services__title">creativity</h3>
-              <p class="services__text">
+            <li class="services__item">
+              <svg class="services__icon">
+                <use href="./img/symbol-defs.svg#icon-computer"></use>
+              </svg>
+              <h3 class="services__item-title">creativity</h3>
+              <p class="services__item-text">
                 Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
             </li>
 
-            <li class="services__item services__item--icon-book">
-              <h3 class="services__title">seo</h3>
-              <p class="services__text">
+            <li class="services__item">
+              <svg class="services__icon">
+                <use href="./img/symbol-defs.svg#icon-book"></use>
+              </svg>
+              <h3 class="services__item-title">seo</h3>
+              <p class="services__item-text">
                 Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
               </p>
             </li>
 
-            <li class="services__item services__item--icon-home">
-              <h3 class="services__title">css&#8725;html</h3>
-              <p class="services__text">
+            <li class="services__item">
+              <svg class="services__icon">
+                <use href="./img/symbol-defs.svg#icon-home"></use>
+              </svg>
+              <h3 class="services__item-title">css&#8725;html</h3>
+              <p class="services__item-text">
                 Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
               </p>
             </li>
 
-            <li class="services__item services__item--icon-digital">
-              <h3 class="services__title">digital</h3>
-              <p class="services__text">
+            <li class="services__item">
+              <svg class="services__icon">
+                <use href="./img/symbol-defs.svg#icon-digital"></use>
+              </svg>
+              <h3 class="services__item-title">digital</h3>
+              <p class="services__item-text">
                 Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
             </li>
           </ul>
         </div>
       </section>
-
-      <section class="team">
+                                                      <!-- SECTION TEAM -->
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">
             <span class="section-title__subtitle">Who we are</span>Meet our team
@@ -128,10 +146,10 @@
             aliquip ex ea commodo consequat.
           </p>
 
-          <ul class="team__list">
+          <ul class="section__list">
             <li class="team__item">
               <div class="team__wrapper">
-                <img class="team__item-img"
+                <img class="team__item-img" width="380" height="470"
                   srcset="
                   ./img/img-01-380x470.jpg 380w,
                   ./img/img-01-760x940@2x.jpg 760w"
@@ -185,7 +203,7 @@
 
             <li class="team__item">
               <div class="team__wrapper">
-                <img class="team__item-img"
+                <img class="team__item-img" width="380" height="470"
                   srcset="
                   ./img/img-02-380x470.jpg 380w,
                   ./img/img-02-760x940@2x.jpg 760w"
@@ -239,7 +257,7 @@
 
             <li class="team__item">
               <div class="team__wrapper">
-                <img class="team__item-img"
+                <img class="team__item-img" width="380" height="470"
                   srcset="
                   ./img/img-03-380x470.jpg 380w,
                   ./img/img-03-760x940@2x.jpg 760w"
@@ -296,16 +314,16 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container footer__container">
+      <div class="container page-footer__container">
         <p class="footer__copy">&#169;2016 MoGo free PSD template by
           <a class="footer__link" href="#">Laaqiq</a>
         </p>
 
-        <form class="footer__form" action="#">
-          <input class="footer__input" type="email" name="user_email"
+        <form class="subscribe__form" action="#">
+          <input class="subscribe__input" type="email" name="user_email"
           placeholder="Your Email...*" required/>
 
-          <button class="footer__btn">subscribe</button>
+          <button class="subscribe__btn">subscribe</button>
         </form>
       </div>
 

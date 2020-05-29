@@ -1,5 +1,6 @@
-$primary-color: teal ;
+/*
+ * Все паршалы импортировать в этот файл
+ */
 
-body {
-background-color: $primary-color;
-}
+@import 'normalize.scss';
+@import 'base.scss';

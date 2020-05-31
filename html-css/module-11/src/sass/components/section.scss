@@ -26,6 +26,7 @@
       background-color: $accent-color-red;
     }
   }
+
   &-text {
     margin: 0 auto 44px;
     max-width: 980px;
@@ -39,5 +40,4 @@
   &__list {
     @extend %flex;
   }
-
 }

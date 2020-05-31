@@ -25,8 +25,6 @@
     color: $text-color-light;
     text-align: center;
   }
-
-
 }
 
 .team__wrapper {
@@ -52,39 +50,37 @@
 }
 
 .social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @extend %flex;
   align-items: center;
-}
 
-.social__item:not(:last-of-type) {
-  margin-right: 1px;
-}
+  &__item:not(:last-of-type) {
+    margin-right: 1px;
+  }
 
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 55px;
-  height: 55px;
-  background-color: rgb(252, 227, 138);
-  transition: 0.3s linear;
-}
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: $accent-color-yellow;
+    transition: 0.3s linear;
 
-.social__link:hover,
-.social__link:focus {
-  outline: none;
-  background-color: rgb(243, 129, 129);
-}
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $accent-color-red;
+    }
+  }
 
-.social__link:hover .social__icon {
-  fill: rgb(255, 255, 255);
-}
+  &__item:hover .social__icon {
+    fill: $main-color-white;
+  }
 
-.social__icon {
-  width: 28px;
-  height: 28px;
-  fill: rgb(243, 129, 129);
-  transition: 0.3s linear;
+  &__icon {
+    width: 28px;
+    height: 28px;
+    fill: $accent-color-red;
+    transition: 0.3s linear;
+  }
 }

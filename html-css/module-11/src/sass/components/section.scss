@@ -1,0 +1,43 @@
+.section {
+  padding-top: 84px;
+
+  &-title {
+    margin-bottom: 62px;
+    font-size: $big-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__subtitle {
+      margin-bottom: 14px;
+      display: block;
+      font-family: $accent-font;
+      font-size: $mid-font-size;
+      font-weight: $font-height-regular;
+      text-transform: none;
+    }
+
+    &::after {
+      margin: 34px auto 0px;
+      display: block;
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: $accent-color-red;
+    }
+  }
+  &-text {
+    margin: 0 auto 44px;
+    max-width: 980px;
+    font-family: $secondary-font;
+    font-size: $small-font-size;
+    line-height: 24px;
+    color: $text-color-light;
+    text-align: center;
+  }
+
+  &__list {
+    @extend %flex;
+  }
+
+}

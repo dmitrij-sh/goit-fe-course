@@ -1,0 +1,90 @@
+.team__item {
+  flex-basis: 380px;
+
+  &:hover .team__overlay {
+    box-shadow: 10px 10px 0px 0px $background-color-blue;
+    opacity: 1;
+  }
+
+  &:hover .team__wrapper {
+    transform: translate(-10px, -10px);
+  }
+
+  &-name {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &-position {
+    font-family: $secondary-font;
+    font-size: $small-font-size;
+    font-weight: $font-height-light;
+    line-height: 24px;
+    font-style: italic;
+    color: $text-color-light;
+    text-align: center;
+  }
+
+
+}
+
+.team__wrapper {
+  position: relative;
+  margin-bottom: 28px;
+  transition: 0.3s linear;
+}
+
+.team__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(0deg,
+  rgba(252, 227, 138, 0.9) 0%,
+  rgba(243, 129, 129, 0.9) 100%);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item:not(:last-of-type) {
+  margin-right: 1px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background-color: rgb(252, 227, 138);
+  transition: 0.3s linear;
+}
+
+.social__link:hover,
+.social__link:focus {
+  outline: none;
+  background-color: rgb(243, 129, 129);
+}
+
+.social__link:hover .social__icon {
+  fill: rgb(255, 255, 255);
+}
+
+.social__icon {
+  width: 28px;
+  height: 28px;
+  fill: rgb(243, 129, 129);
+  transition: 0.3s linear;
+}

@@ -1,0 +1,18 @@
+.header__subtitle {
+  @extend %main-title;
+  margin-bottom: 30px;
+  max-width: 580px;
+  font-family: $accent-font;
+  font-size: 72px;
+}
+
+.header__title {
+  @extend %main-title;
+  margin-bottom: 100px;
+  max-width: 820px;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 144px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}

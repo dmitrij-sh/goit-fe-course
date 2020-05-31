@@ -36,8 +36,4 @@
     color: $text-color-light;
     text-align: center;
   }
-
-  &__list {
-    @extend %flex;
-  }
 }

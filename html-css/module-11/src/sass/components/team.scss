@@ -1,36 +1,40 @@
-.team__item {
-  flex-basis: 380px;
+.team-list {
+  @extend %flex;
 
-  &:hover .team__overlay {
-    box-shadow: 10px 10px 0px 0px $background-color-blue;
-    opacity: 1;
+  &__item {
+    flex-basis: 380px;
+
+    &-wrapper {
+      position: relative;
+      margin-bottom: 28px;
+      transition: 0.3s linear;
+    }
+
+    &:hover .team__overlay {
+      box-shadow: 10px 10px 0px 0px $background-color-blue;
+      opacity: 1;
+    }
+
+    &:hover .team-list__item-wrapper {
+      transform: translate(-10px, -10px);
+    }
+
+    &-name {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    &-position {
+      font-family: $secondary-font;
+      font-size: $small-font-size;
+      font-weight: $font-height-light;
+      line-height: 24px;
+      font-style: italic;
+      color: $text-color-light;
+      text-align: center;
+    }
   }
-
-  &:hover .team__wrapper {
-    transform: translate(-10px, -10px);
-  }
-
-  &-name {
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  &-position {
-    font-family: $secondary-font;
-    font-size: $small-font-size;
-    font-weight: $font-height-light;
-    line-height: 24px;
-    font-style: italic;
-    color: $text-color-light;
-    text-align: center;
-  }
-}
-
-.team__wrapper {
-  position: relative;
-  margin-bottom: 28px;
-  transition: 0.3s linear;
 }
 
 .team__overlay {

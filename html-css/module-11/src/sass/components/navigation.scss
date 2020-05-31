@@ -1,38 +1,7 @@
-.nav__navigation {
-  @extend %flex;
-}
-
-.navigation__link {
-  font-weight: $font-height-regular;
-  color: $main-color-white;
-  text-transform: uppercase;
-  transition: 0.3s linear;
-
-  &:hover,
-  &:focus {
-    color: $accent-color-yellow;
-    padding-bottom: 12px;
-    border-bottom: 3px solid $accent-color-yellow;
-    width: 100%;
-    outline: none;
-  }
-}
-
-.navigation__btn {
-  @extend %button;
-  border: none;
-  background-color: transparent;
-
-  &-icon {
-    display: block;
-    width: 18px;
-    height: 15px;
-    fill: $main-color-white;
-    transition: transform 0.3s linear;
-
-    &:hover {
-      transform: scale(1.3);
-      fill: $accent-color-yellow;
-    }
-  }
+.navigation {
+  margin-bottom: 150px;
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }

@@ -10,3 +10,5 @@
 - [Module 07](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-07/index.html)
 - [Module 08](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-08/index.html)
 - [Module 09](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-09/index.html)
+- [Module 10](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-10/index.html)
+- [Module 11](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-11/build/index.html)

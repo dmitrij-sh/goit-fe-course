@@ -3,3 +3,26 @@
   background-repeat: $repeat;
   background-position: $pos;
 }
+
+@mixin psevdo($display: inline-block, $content: '') {
+  display: $display;
+  content: $content;
+}
+
+@mixin flex-all($type: 'center') {
+  display: flex;
+
+  @if $type== 'center' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'beet-wrap' {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } @else if $type== 'beet-center' {
+    justify-content: space-between;
+    align-items: center;
+  } @else if $type== 'beet-line' {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}

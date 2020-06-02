@@ -1,14 +1,8 @@
 %main-title {
-  margin: 0px auto;
+  margin: 0rem auto;
   color: $main-color-white;
   text-align: center;
   overflow: hidden;
-}
-
-%flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 %button {

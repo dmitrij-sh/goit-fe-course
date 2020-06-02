@@ -13,6 +13,15 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .clearfix::after {
   display: table;
   content: "";

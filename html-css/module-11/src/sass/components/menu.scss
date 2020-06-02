@@ -1,5 +1,5 @@
 .menu-list {
-  @extend %flex;
+  @include flex-all('beet-wrap');
   flex-basis: 51.1666%;
 
   &__link {
@@ -11,7 +11,7 @@
     &:hover,
     &:focus {
       color: $accent-color-yellow;
-      padding-bottom: 12px;
+      padding-bottom: 0.75rem;
       border-bottom: 3px solid $accent-color-yellow;
       width: 100%;
       outline: none;
@@ -26,8 +26,8 @@
 
   &__icon {
     display: block;
-    width: 18px;
-    height: 15px;
+    max-width: 18px;
+    max-height: 0.9375rem;
     fill: $main-color-white;
     transition: transform 0.3s linear;
 

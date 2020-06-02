@@ -1,7 +1,5 @@
 .navigation {
-  margin-bottom: 150px;
-  min-height: 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @include flex-all('beet-line');
+  margin-bottom: 9.375rem;
+  min-height: 3rem;
 }

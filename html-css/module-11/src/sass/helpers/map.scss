@@ -10,5 +10,5 @@ $colors: (
 )
 
 .selector {
-color: map-get($colors: , $main-color-white: );
+color: map-get($colors:, $main-color-white:);
 }

@@ -1,0 +1,10 @@
+.container {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 30px 0px;
+}
+.task-section__title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+}

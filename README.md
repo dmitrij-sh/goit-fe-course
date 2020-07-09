@@ -14,4 +14,4 @@
 - [Module 11](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-11/build/index.html)
 
 **javasctipt:**
-- [Module 01](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-01/index.html
+- [Module 01](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-01/index.html) 

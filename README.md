@@ -1,6 +1,6 @@
 # goit-fe-course
 
-**homeworks:**
+**html-css:**
 
 - [Module 01-02](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-01/index.html)
 - [Module 03](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-02/index.html)
@@ -12,3 +12,6 @@
 - [Module 09](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-09/index.html)
 - [Module 10](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-10/index.html)
 - [Module 11](https://dmitrij-sh.github.io/goit-fe-course/html-css/module-11/build/index.html)
+
+**javasctipt:**
+- [Module 01](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-01/index.html

@@ -4,18 +4,20 @@ btnTaskFour.addEventListener('click', () => {
   const pricePerDroid = 3000;
 
   let input = prompt(`Сколько дроидов Вы желаете приобрести?`);
+
   if (input === null) {
     console.log('Отменено пользователем!');
   } else {
     const totalPrice = input * pricePerDroid;
 
-    const result =
-      totalPrice <= credits
-        ? console.log(
-            `Вы купили ${input} дроидов, на счету осталось ${
-              credits - totalPrice
-            } кредитов.`,
-          )
-        : console.log(`Недостаточно средств на счету!`);
+    if (totalPrice <= credits) {
+      console.log(
+        `Вы купили ${input} дроидов, на счету осталось ${
+          credits - totalPrice
+        } кредитов.`,
+      );
+    } else {
+      console.log(`Недостаточно средств на счету!`);
+    }
   }
 });

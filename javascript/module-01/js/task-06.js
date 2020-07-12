@@ -8,16 +8,14 @@ btnTaskSix.addEventListener('click', () => {
     input = prompt('Веедите любое число');
 
     if (input !== null) {
+      if (Number.isNaN(+input)) {
+        alert('Было введено не число, попробуйте еще раз');
+        continue;
+      }
       input = Number(input);
+      total += input;
     }
-
-    if (Number.isNaN(+input)) {
-      alert('Было введено не число, попробуйте еще раз');
-      continue;
-    }
-    total += input;
   } while (input !== null);
-  {
-    alert(`Общая сумма чисел равна ${total}`);
-  }
+
+  alert(`Общая сумма чисел равна ${total}`);
 });

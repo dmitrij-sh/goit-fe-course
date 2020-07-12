@@ -9,39 +9,40 @@ btnTaskFive.addEventListener('click', () => {
   const input = prompt(`Введите страну?`);
   if (input === null) {
     alert(`Отменено пользователем!`);
-  }
-  switch (input.toLowerCase()) {
-    case 'китай':
-      console.log(
-        `Доставка в ${input} будет стоить ${chinaDeliveryCost} кредитов`,
-      );
-      break;
+  } else {
+    switch (input.toLowerCase()) {
+      case 'китай':
+        console.log(
+          `Доставка в ${input} будет стоить ${chinaDeliveryCost} кредитов`,
+        );
+        break;
 
-    case 'чили':
-      console.log(
-        `Доставка в ${input} будет стоить ${chileDeliveryCost} кредитов`,
-      );
-      break;
+      case 'чили':
+        console.log(
+          `Доставка в ${input} будет стоить ${chileDeliveryCost} кредитов`,
+        );
+        break;
 
-    case 'австралия':
-      console.log(
-        `Доставка в ${input} будет стоить ${australiaDeliveryCost} кредитов`,
-      );
-      break;
+      case 'австралия':
+        console.log(
+          `Доставка в ${input} будет стоить ${australiaDeliveryCost} кредитов`,
+        );
+        break;
 
-    case 'индия':
-      console.log(
-        `Доставка в ${input} будет стоить ${indiaDeliveryCost} кредитов`,
-      );
-      break;
+      case 'индия':
+        console.log(
+          `Доставка в ${input} будет стоить ${indiaDeliveryCost} кредитов`,
+        );
+        break;
 
-    case 'ямайка':
-      console.log(
-        `Доставка в ${input} будет стоить ${jamaicaDeliveryCost} кредитов`,
-      );
-      break;
+      case 'ямайка':
+        console.log(
+          `Доставка в ${input} будет стоить ${jamaicaDeliveryCost} кредитов`,
+        );
+        break;
 
-    default:
-      alert(`В вашей стране доставка не доступна`);
+      default:
+        alert(`В вашей стране доставка не доступна`);
+    }
   }
 });

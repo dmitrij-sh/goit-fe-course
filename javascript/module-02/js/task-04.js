@@ -1,2 +1,2 @@
-const btnTaskFour = document.querySelector('#task_04');
-btnTaskFour.addEventListener('click', () => {});
+const buttonRef = document.querySelector('#task_04');
+buttonRef.addEventListener('click', () => {});

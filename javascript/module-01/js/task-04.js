@@ -1,5 +1,5 @@
-const btnTaskFour = document.querySelector('#task_04');
-btnTaskFour.addEventListener('click', () => {
+const buttonRef = document.querySelector('#task_04');
+buttonRef.addEventListener('click', () => {
   const credits = 23580;
   const pricePerDroid = 3000;
 

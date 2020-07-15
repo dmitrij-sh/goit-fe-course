@@ -1,6 +1,5 @@
-const btnTaskSix = document.querySelector('#task_06');
-
-btnTaskSix.addEventListener('click', () => {
+const buttonRef = document.querySelector('#task_06');
+buttonRef.addEventListener('click', () => {
   let total = 0;
   let input;
 
@@ -12,8 +11,7 @@ btnTaskSix.addEventListener('click', () => {
         alert('Было введено не число, попробуйте еще раз');
         continue;
       }
-      input = Number(input);
-      total += input;
+      total += +input;
     }
   } while (input !== null);
 

@@ -102,6 +102,37 @@
 
         <button class="btn" id="task_06">Start</button>
       </section>
+
+      <section class="task-section">
+        <h2 class="task-section__title">Задание 7</h2>
+
+        <p class="task-section__text">
+          Есть массив logins с логинами пользователей. Напиши скрипт добавления
+          логина в массив logins. Добавляемый логин должен: проходить проверку
+          на длину от 4 до 16-ти символов включительно быть уникален, то есть
+          отсутствовать в массиве logins Разбей задачу на подзадачи с помощью
+          функций. Напиши функцию isLoginValid(login), в которой проверь
+          количество символов параметра login и верни true или false в
+          зависимости от того, попадает ли длина параметра в заданный диапазон
+          от 4-х до 16-ти символов включительно. Напиши функцию
+          isLoginUnique(allLogins, login), которая принимает список всех логинов
+          и добавляемый логин как параметры и проверяет наличие login в массиве
+          allLogins, возвращая true если такого логина еще нет и false если
+          логин уже используется. Напиши функцию addLogin(allLogins, login)
+          которая: Принимает новый логин и массив всех логинов как параметры
+          Проверяет валидность логина используя вспомогательную функцию
+          isLoginValid Если логин не валиден, прекратить исполнение функции
+          addLogin и вернуть строку 'Ошибка! Логин должен быть от 4 до 16
+          символов' Если логин валиден, функция addLogin проверяеть уникальность
+          логина с помощью функции isLoginUnique Если isLoginUnique вернет
+          false, тогда addLogin не добавляет логин в массив и возвращает строку
+          'Такой логин уже используется!' Если isLoginUnique вернет true,
+          addLogin добавляет новый логин в logins и возвращает строку 'Логин
+          успешно добавлен!'
+        </p>
+
+        <button class="btn" id="task_07">Start</button>
+      </section>
     </div>
     <!-- <script src="./js/task-01.js"></script> -->
     <script type="module" src="./js/task-01.js"></script>
@@ -110,5 +141,6 @@
     <script type="module" src="./js/task-04.js"></script>
     <script type="module" src="./js/task-05.js"></script>
     <script type="module" src="./js/task-06.js"></script>
+    <script type="module" src="./js/task-07.js"></script>
   </body>
 </html>

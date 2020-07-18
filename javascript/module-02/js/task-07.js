@@ -23,7 +23,7 @@ const addLogin = function (allLogins, login) {
 
 buttonRef.addEventListener('click', () => {
   console.log(addLogin(logins, 'Ajax'));
-  // console.log(addLogin(logins, 'robotGoogles'));
-  // console.log(addLogin(logins, 'Zod'));
-  // console.log(addLogin(logins, 'jqueryisextremelyfast'));
+  console.log(addLogin(logins, 'robotGoogles'));
+  console.log(addLogin(logins, 'Zod'));
+  console.log(addLogin(logins, 'jqueryisextremelyfast'));
 });

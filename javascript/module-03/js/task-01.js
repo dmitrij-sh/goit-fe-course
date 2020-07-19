@@ -9,10 +9,9 @@ const user = {
 user.mood = 'happy';
 user.hobby = 'skydiving';
 user.premium = false;
-const keys = Object.keys(user);
 
 buttonRef.addEventListener('click', () => {
-  for (const key of keys) {
+  for (const key of Object.keys(user)) {
     console.log(`${key}: ${user[key]}`);
   }
 });

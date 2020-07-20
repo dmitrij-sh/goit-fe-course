@@ -3,13 +3,20 @@ const findBestEmployee = function (employees) {
   let bestEmployee;
   let bestValue = 0;
 
-  for (const key of Object.entries(employees)) {
-    if (key[1] > bestValue) {
-      bestEmployee = key[0];
-      bestValue = key[1];
+  for (let key in employees) {
+    if (employees[key] > bestValue) {
+      bestEmployee = key;
+      bestValue = employees[key];
     }
   }
-  return `${bestEmployee}: ${bestValue}`;
+
+  // for (const key of Object.entries(employees)) {
+  //   if (key[1] > bestValue) {
+  //     bestEmployee = key[0];
+  //     bestValue = key[1];
+  //   }
+  // }
+  return bestEmployee;
 };
 
 buttonRef.addEventListener('click', () => {

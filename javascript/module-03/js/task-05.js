@@ -7,9 +7,9 @@ const products = [
 ];
 const getAllPropValues = function (arr, prop) {
   const result = [];
-  for (const obj of arr) {
-    if (prop in obj) {
-      result.push(obj[prop]);
+  for (const product of arr) {
+    if (prop in product) {
+      result.push(product[prop]);
     }
   }
   return result;

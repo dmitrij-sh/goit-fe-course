@@ -1,11 +1,11 @@
 const buttonRef = document.querySelector('#task_03');
 const findBestEmployee = function (employees) {
   let bestEmployee;
-  let arr = Object.values(employees);
-  for (const key in employees) {
-    const [volume] = arr;
+  let maxValues;
 
-    if (employees[key] >= volume) {
+  for (const key in employees) {
+    if (!maxValues || employees[key] >= maxValues) {
+      maxValues = employees[key];
       bestEmployee = key;
     }
   }

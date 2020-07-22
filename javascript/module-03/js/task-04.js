@@ -1,8 +1,8 @@
 const buttonRef = document.querySelector('#task_04');
 const countTotalSalary = function (employees) {
   let total = 0;
-  for (let value of Object.values(employees)) {
-    total += value;
+  for (let value in employees) {
+    total += employees[value];
   }
   return total;
 };

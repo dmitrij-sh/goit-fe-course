@@ -9,33 +9,6 @@ const findBestEmployee = function (employees) {
       bestEmployee = key;
     }
   }
-
-  // let bestEmployee;
-  // let bestValue = 0;
-
-  // for (let key in employees) {
-  //   if (employees[key] > bestValue) {
-  //     bestEmployee = key;
-  //     bestValue = employees[key];
-  //   }
-  // }
-
-  // let bestEmployee;
-  // let bestValue = Object.values(employees)[0];
-  // for (const key of Object.entries(employees)) {
-  //   if (key[1] >= bestValue) {
-  //     bestEmployee = key[0];
-  //     bestValue = key[1];
-  //   }
-  // }
-
-  // let bestEmployee;
-  // let bestValue = Object.values(employees)[0];
-  // for (const key in employees) {
-  //   if (employees[key] >= bestValue) {
-  //     bestEmployee = key;
-  //   }
-  // }
   return bestEmployee;
 };
 

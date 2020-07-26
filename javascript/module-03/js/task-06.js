@@ -12,6 +12,12 @@ const calculateTotalPrice = function (allProdcuts, productName) {
       return product.price * product.quantity;
     }
   }
+
+  // for (const product of allProdcuts) {
+  //   if (product.name.includes(productName)) {
+  //     return product.price * product.quantity;
+  //   }
+  // }
 };
 
 buttonRef.addEventListener('click', () => {

@@ -1,3 +1,29 @@
 const buttonRef = document.querySelector('#task_01');
+const account = {
+  owner: 'Mango',
+  balance: 24000,
+  discount: 0.1,
+  orders: ['order-1', 'order-2', 'order-3'],
 
-buttonRef.addEventListener('click', () => {});
+  changeDiscount(value) {
+    this.discount = value;
+  },
+  showOrders() {
+    return this.orders;
+  },
+  addOrder(cost, order) {
+    this.balance -= cost;
+    this.orders.push(order);
+  },
+};
+
+buttonRef.addEventListener('click', () => {
+  account.changeDiscount(0.15);
+  console.log(account.discount);
+
+  console.table(account.showOrders());
+
+  account.addOrder(5000, 'order-4');
+  console.log(account.balance);
+  console.table(account.showOrders());
+});

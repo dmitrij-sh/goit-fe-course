@@ -19,3 +19,4 @@
 - [Module 01](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-01/index.html) 
 - [Module 02](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-02/index.html)
 - [Module 03](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-03/index.html)
+- [Module 04](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-04/index.html)

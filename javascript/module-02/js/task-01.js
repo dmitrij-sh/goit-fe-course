@@ -1,9 +1,15 @@
 const buttonRef = document.querySelector('#task_01');
-const logItems = function (array) {
+const logItems = array => {
   for (let i = 0; i < array.length; i += 1) {
     console.log(`${array[i]}`);
   }
-};
+}
+
+// const logItems = function (array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     console.log(`${array[i]}`);
+//   }
+// };
 
 buttonRef.addEventListener('click', () => {
   logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);

@@ -13,7 +13,7 @@ const inventory = {
 
 const invokeInventoryAction = function(itemName, action) {
   console.log(`Invoking action on ${itemName}`);
-  action.bind(inventory)(itemName);
+  action.call(inventory, itemName);
 };
 
 buttonRef.addEventListener('click', () => {

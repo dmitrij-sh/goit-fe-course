@@ -1,7 +1,10 @@
 const buttonRef = document.querySelector('#task_04');
-const formatString = function (string) {
-  return string.length <= 40 ? string : `${string.slice(0, 41)}...`;
-};
+const formatString = string => string.length <= 40 ? string : `${string.slice(0, 41)}...`;
+
+
+// const formatString = function (string) {
+//   return string.length <= 40 ? string : `${string.slice(0, 41)}...`;
+// };
 
 buttonRef.addEventListener('click', () => {
   console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

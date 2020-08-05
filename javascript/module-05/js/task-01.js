@@ -1,7 +1,5 @@
 const buttonRef = document.querySelector('#task_01');
 
-
-
 const Account = function({login, email}) {
   this.login = login;
   this.email = email;

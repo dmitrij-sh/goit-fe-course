@@ -14,7 +14,41 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 1</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          В HTML есть список категорий ul#categories.
+        </p>
+
+        <ul class="task-section__text" id="categories">
+          <li class="item">
+            <h2>Животные</h2>
+            <ul>
+              <li>Кот</li>
+              <li>Хомяк</li>
+              <li>Лошадь</li>
+              <li>Попугай</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <h2>Продукты</h2>
+            <ul>
+              <li>Хлеб</li>
+              <li>Петрушка</li>
+              <li>Творог</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <h2>Технологии</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+            </ul>
+          </li>
+        </ul>
 
         <button class="btn" id="task_01">Start</button>
       </section>
@@ -22,7 +56,11 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 2</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          В HTML есть пустой список ul#ingredients.
+        </p>
+
+        <ul class="task-section__text" id="ingredients"></ul>
 
         <button class="btn" id="task_02">Start</button>
       </section>
@@ -30,7 +68,11 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 3</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          Напиши скрипт для создания галлереи изображений по массиву данных.
+        </p>
+
+        <ul class="task-section__text" id="gallery"></ul>
 
         <button class="btn" id="task_03">Start</button>
       </section>
@@ -38,7 +80,20 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 4</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          Счетчик состоит из спана и кнопок, которые должны увеличивать и
+          уменьшать значение счетчика на 1. Создай переменную counterValue в
+          которой будет хранится текущее значение счетчика. Создай функции
+          increment и decrement для увеличения и уменьшения значения счетчика
+          Добавь слушатели кликов на кнопки, вызовы функций и обновление
+          интерфейса
+        </p>
+
+        <div class="task-section__text" id="counter">
+          <button type="button" data-action="decrement">-1</button>
+          <span id="value">0</span>
+          <button type="button" data-action="increment">+1</button>
+        </div>
 
         <button class="btn" id="task_04">Start</button>
       </section>
@@ -46,7 +101,19 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 5</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          Напиши скрипт который, при наборе текста в инпуте input#name-input
+          (событие input), подставляет его текущее значение в span#name-output.
+          Если инпут пустой, в спане должна отображаться строка 'незнакомец'.
+        </p>
+
+        <input
+          class="task-section__text"
+          type="text"
+          placeholder="Ваше имя?"
+          id="name-input"
+        />
+        <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 
         <button class="btn" id="task_05">Start</button>
       </section>
@@ -54,7 +121,18 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 6</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          Напиши скрипт, который бы при потере фокуса на инпуте, проверял его
+          содержимое на правильное количество символов.
+        </p>
+
+        <input
+          class="task-section__text"
+          type="text"
+          id="validation-input"
+          data-length="6"
+          placeholder="Введи 6 символов"
+        />
 
         <button class="btn" id="task_06">Start</button>
       </section>
@@ -62,7 +140,16 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 7</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          Напиши скрипт, который реагирует на изменение значения
+          input#font-size-control (событие input) и изменяет инлайн-стиль
+          span#text обновляя свойство font-size. В результате при перетаскивании
+          ползунка будет меняться размер текста.
+        </p>
+
+        <input class="task-section__text" id="font-size-control" type="range" />
+        <br />
+        <span id="text">Абракадабра!</span>
 
         <button class="btn" id="task_07">Start</button>
       </section>
@@ -70,7 +157,20 @@
       <section class="task-section">
         <h2 class="task-section__title">Задание 8</h2>
 
-        <p class="task-section__text"></p>
+        <p class="task-section__text">
+          Напиши скрипт создания и очистки коллекции элементов. Пользователь
+          вводит количество элементов в input и нажимает кнопку Создать, после
+          чего рендерится коллекция. При нажатии на кнопку Очистить, коллекция
+          элементов очищается.
+        </p>
+
+        <div class="task-section__text" id="controls">
+          <input type="number" min="0" max="100" step="1" />
+          <button type="button" data-action="render">Создать</button>
+          <button type="button" data-action="destroy">Очистить</button>
+        </div>
+
+        <div id="boxes"></div>
 
         <button class="btn" id="task_08">Start</button>
       </section>

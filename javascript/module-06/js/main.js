@@ -85,36 +85,22 @@ buttonRef8.addEventListener('click', () => {
   console.log(getNamesSortedByFriendsCount(users));
 });
 
-// -----ЗАДАНИЕ 10-----//
+// console.group('ЗАДАНИЕ 10');
 const buttonRef9 = document.querySelector('#task_10');
-// const getSortedUniqueSkills = users =>
-//   users.reduce((allSkills, user) => {
-//     allSkills.push(...user.skills);
-//     return allSkills
-//       .filter((skill, i) => allSkills.indexOf(skill) === i)
-//       .sort();
-//   }, []);
-
 const getSortedUniqueSkills = users =>
-users.reduce((allSkills, user) => [...allSkills, ...user.skills], [])
-.filter((skill, i, arr) => arr.indexOf(skill) === i)
-.sort();
+  users.reduce((allSkills, user) => {
+    allSkills.push(...user.skills);
+    return allSkills
+      .filter((skill, i) => allSkills.indexOf(skill) === i)
+      .sort();
+  }, []);
 
-// const getSortedUniqueSkills = function (users) {
-//   const dd = users
-//     .reduce(function (allSkills, user) {
-//       const bb = [...allSkills, ...user.skills];
-//       // console.log('acc --', allSkills, 'realArr---', user.skills);
-//       return bb
-//     }, [])
-//     .filter(function (skill, i, arr) {
-//       const zz = arr.indexOf(skill) === i;
-//       console.log('acc --', skill, 'iteration---', i, 'arr----', arr);
-//       return zz;
-//     })
-//     .sort();
-//   return dd;
-// };
+// const getSortedUniqueSkills = users =>
+// users.reduce((allSkills, user) => [...allSkills, ...user.skills], [])
+// .filter((skill, i, arr) => arr.indexOf(skill) === i)
+// .sort();
+
 buttonRef9.addEventListener('click', () => {
   console.log(getSortedUniqueSkills(users));
 });
+console.groupEnd();

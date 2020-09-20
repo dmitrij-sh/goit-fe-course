@@ -24,6 +24,14 @@
   margin-bottom: 10px;
 }
 
+.task-section__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task-section__item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
 .item h2 {
   font-size: 18px;
   font-weight: 600;

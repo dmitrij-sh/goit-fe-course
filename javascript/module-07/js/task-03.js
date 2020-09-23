@@ -20,16 +20,16 @@ const images = [
 
 const listContainerRef = document.querySelector('#gallery');
 
-const createListMarkup = image => {
+function createListMarkup(image) {
   return `
   <li class="task-section__item">
     <img src="${image.url}", alt="${image.alt}">
   </li>`;
-};
+}
 
-const craeteGallery = images.map(image => createListMarkup(image)).join('');
+const createGallery = images.map(image => createListMarkup(image)).join('');
 
 buttonRef.addEventListener('click', () => {
-  listContainerRef.insertAdjacentHTML('beforeend', craeteGallery);
+  listContainerRef.insertAdjacentHTML('beforeend', createGallery);
   console.log(listContainerRef);
 });

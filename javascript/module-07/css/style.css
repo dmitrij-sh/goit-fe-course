@@ -2,7 +2,7 @@
   border: 3px solid #bdbdbd;
 }
 
-#validation-input.valid {
+#controls-in #validation-input.valid {
   border-color: #4caf50;
 }
 
@@ -59,4 +59,8 @@
   padding: 2px;
   border: 1px solid grey;
   display: block;
+}
+
+.task-section__input {
+  border: 3px solid #bdbdbd;
 }

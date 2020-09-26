@@ -1,4 +1,4 @@
-const buttonRef = document.querySelector('#task_03');
+// const buttonRef = document.querySelector('#task_03');
 
 const images = [
   {
@@ -20,16 +20,16 @@ const images = [
 
 const listContainerRef = document.querySelector('#gallery');
 
-function createListMarkup(image) {
+const createListMarkup = image => {
   return `
   <li class="task-section__item">
     <img src="${image.url}", alt="${image.alt}">
   </li>`;
-}
+};
 
 const createGallery = images.map(image => createListMarkup(image)).join('');
 
-buttonRef.addEventListener('click', () => {
-  listContainerRef.insertAdjacentHTML('beforeend', createGallery);
-  console.log(listContainerRef);
-});
+listContainerRef.insertAdjacentHTML('beforeend', createGallery);
+console.log(listContainerRef);
+
+// buttonRef.addEventListener('click', () => {});

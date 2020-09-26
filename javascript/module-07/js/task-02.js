@@ -1,4 +1,4 @@
-const buttonRef = document.querySelector('#task_02');
+// const buttonRef = document.querySelector('#task_02');
 const ingredients = [
   'Картошка',
   'Грибы',
@@ -17,7 +17,7 @@ const elements = ingredients.map(ingredient => {
   return createListRef;
 });
 
-buttonRef.addEventListener('click', () => {
-  listContainerRef.append(...elements);
-  console.log(listContainerRef);
-});
+listContainerRef.append(...elements);
+console.log(listContainerRef);
+
+// buttonRef.addEventListener('click', () => {});

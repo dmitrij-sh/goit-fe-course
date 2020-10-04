@@ -1,16 +1,20 @@
-import gallerys from './gallery-items.js';
+import galleryItems from './gallery-items.js';
 
 const refs = {
-  galleryContainer: document.querySelector('.js-gallery'),
-  openModalLightbox: document.querySelector('.js-lightbox'),
+  galleryList: document.querySelector('.js-gallery'),
+  openModal: document.querySelector('.js-lightbox'),
   closeModalBtn: document.querySelector('button[data-action="close-lightbox"]'),
-  lightboxImg: document.querySelector('.lightbox__image'),
+  currentImg: document.querySelector('.lightbox__image'),
   backdrop: document.querySelector('.lightbox__overlay'),
 };
 
-function createGalleryMarkup(gallerys) {
-  return gallerys
-    .map(({ preview, original, description }) => {
+let index = 0;
+
+refs.galleryList.addEventListener('click', onListGalleryClick);
+
+function getGalleryItems(item) {
+  const createList = item
+    .map(({ preview, original, description }, idx) => {
       return `<li class="gallery__item">
       <a class="gallery__link" href="${original}">
       <img class="gallery__image" loading="lazy" src="${preview}"
@@ -18,57 +22,83 @@ function createGalleryMarkup(gallerys) {
       </a></li>`;
     })
     .join('');
+
+  return refs.galleryList.insertAdjacentHTML('beforeend', createList);
 }
 
-refs.galleryContainer.insertAdjacentHTML(
-  'beforeend',
-  createGalleryMarkup(gallerys),
-);
+function onListGalleryClick(e) {
+  e.preventDefault();
 
-function onGalleryContainerClick(evt) {
-  evt.preventDefault();
-
-  if (evt.target.nodeName !== 'IMG') {
+  if (e.target.nodeName !== 'IMG') {
     return;
   }
 
-  // if (!evt.target.classList.contains('gallery__image')) {
+  OpenModal();
+  setImgToModal(e.target.dataset.source, e.target.alt);
+
+  // if (!e.target.classList.contains('gallery__image')) {
   //   return;
   // }
-
-  onOpenModalClick();
-  changeAttributeLightboxImage(evt.target.dataset.source);
 }
 
-function onOpenModalClick(evt) {
-  window.addEventListener('keydown', onCloseModalEscPress);
-  refs.openModalLightbox.classList.add('is-open');
+function OpenModal(e) {
+  refs.openModal.classList.add('is-open');
+
+  window.addEventListener('keydown', closeModalForEsc);
+  window.addEventListener('keydown', onScrollImgPress);
+  refs.backdrop.addEventListener('click', onBackdropClick);
+  refs.closeModalBtn.addEventListener('click', onCloseModalBtnClick);
 }
 
-function changeAttributeLightboxImage(src) {
-  refs.lightboxImg.src = src;
+function setImgToModal(src, alt) {
+  refs.currentImg.src = src;
+  refs.currentImg.alt = alt;
 }
 
-function onCloseModalBtnClick(evt) {
-  window.removeEventListener('keydown', onCloseModalEscPress);
-  refs.openModalLightbox.classList.remove('is-open');
-  refs.lightboxImg.src = '';
+function onCloseModalBtnClick(e) {
+  refs.openModal.classList.remove('is-open');
+  refs.currentImg.src = '';
+  refs.currentImg.alt = '';
+
+  window.removeEventListener('keydown', closeModalForEsc);
+  window.removeEventListener('keydown', onScrollImgPress);
+  refs.closeModalBtn.removeEventListener('click', onCloseModalBtnClick);
+  refs.backdrop.removeEventListener('click', onBackdropClick);
 }
 
-function onCloseModalEscPress(evt) {
+function closeModalForEsc(e) {
   const ESC_KEY_CODE = 'Escape';
 
-  if (evt.code === ESC_KEY_CODE) {
+  if (e.code === ESC_KEY_CODE) {
     onCloseModalBtnClick();
   }
 }
 
-function onBackdropClick(evt) {
-  if (evt.currentTarget === evt.target) {
+function onBackdropClick(e) {
+  if (e.currentTarget === e.target) {
     onCloseModalBtnClick();
   }
 }
 
-refs.galleryContainer.addEventListener('click', onGalleryContainerClick);
-refs.closeModalBtn.addEventListener('click', onCloseModalBtnClick);
-refs.backdrop.addEventListener('click', onBackdropClick);
+function onScrollImgPress(e) {
+  index = galleryItems.findIndex(img => img.original === refs.currentImg.src);
+
+  if (e.code === 'ArrowLeft') {
+    if (index === 0) {
+      index += galleryItems.length;
+    }
+    index -= 1;
+  }
+
+  if (e.code === 'ArrowRight') {
+    if (index === galleryItems.length - 1) {
+      index -= galleryItems.length;
+    }
+    index += 1;
+  }
+
+  refs.currentImg.src = galleryItems[index].original;
+  refs.currentImg.alt = galleryItems[index].description;
+}
+
+getGalleryItems(galleryItems);

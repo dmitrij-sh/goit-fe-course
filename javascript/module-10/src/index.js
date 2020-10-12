@@ -1,5 +1,6 @@
-const x = 3;
-const add = d => {
-  console.log(x);
+import './css/main.scss';
+
+const add = (x, y) => {
+  console.log(x + y);
 };
-add(1);
+add(5, 3);

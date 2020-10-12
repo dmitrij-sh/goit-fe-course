@@ -22,3 +22,6 @@
 - [Module 04](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-04/index.html)
 - [Module 05](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-05/index.html)
 - [Module 06](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-06/index.html)
+- [Module 07](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-07/index.html)
+- [Module 08](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-08/index.html)
+- [Module 09](https://dmitrij-sh.github.io/goit-fe-course/javascript/module-09_npm_parcel/index.html)

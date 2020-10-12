@@ -1,4 +1,17 @@
-import galleryItems from './gallery-items.js';
+import galleryItems from './gallery-items';
+import num from './import/export';
+import {
+  fetchAllUsers,
+  fetchUsersById,
+  updateUsersById,
+  x as value, // переименнование
+} from './import/services';
+import * as services from './import/services';
+
+// console.log(num);
+// console.log(fetchAllUsers);
+// console.log(value);
+// console.log(services);
 
 const refs = {
   galleryList: document.querySelector('.js-gallery'),

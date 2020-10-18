@@ -1,5 +1,7 @@
 import galleryItems from './gallery-items.js';
 
+let index = 0;
+
 const refs = {
   galleryList: document.querySelector('.js-gallery'),
   openModal: document.querySelector('.js-lightbox'),
@@ -7,8 +9,6 @@ const refs = {
   currentImg: document.querySelector('.lightbox__image'),
   backdrop: document.querySelector('.lightbox__overlay'),
 };
-
-let index = 0;
 
 refs.galleryList.addEventListener('click', onListGalleryClick);
 

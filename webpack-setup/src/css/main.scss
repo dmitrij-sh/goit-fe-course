@@ -1,0 +1,19 @@
+// HELPERS
+@import 'helpers/variables';
+@import 'helpers/placeholder';
+@import 'helpers/mixin.scss';
+@import 'normalize';
+@import 'base';
+@import 'fonts';
+@import 'helpers/extras';
+
+// COMPONENTS
+@import 'components/container';
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/section';
+@import 'components/services';
+@import 'components/team';
+@import 'components/footer';

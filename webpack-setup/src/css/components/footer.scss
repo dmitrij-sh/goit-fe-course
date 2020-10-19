@@ -1,0 +1,67 @@
+.page-footer {
+  padding: 5.375rem 0rem 0.625rem;
+
+  &__container {
+    @include flex-all('beet-center');
+    padding-top: 0.5rem;
+    border-top: 1px solid rgb(229, 229, 229);
+  }
+}
+
+.footer__copy {
+  font-size: 0.875rem;
+}
+
+.footer__link {
+  display: inline-block;
+  text-transform: none;
+  color: $accent-color-red;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__input {
+  padding: 0.625rem;
+  max-width: 14.75rem;
+  max-height: 2.875rem;
+  border: 1px solid rgb(231, 231, 231);
+  outline: none;
+
+  &:required:focus:valid:not(:placeholder-shown) {
+    border: 1px solid $color-input-valid;
+  }
+
+  &:required:focus:invalid:not(:placeholder-shown) {
+    border: 1px solid $color-input-invalid;
+  }
+
+  &::placeholder {
+    padding-left: 0.625rem;
+    font-family: $secondary-font;
+    font-style: italic;
+    font-size: $small-font-size;
+    line-height: 1.6;
+    color: rgb(204, 204, 204);
+  }
+}
+
+.subscribe__btn {
+  display: block;
+  background-color: $background-color-blue;
+  max-width: 9.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main-color-white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0rem 0.0625rem 0.3125rem 0.125rem rgba(0, 0, 0, 0.5);
+    background-color: $accent-color-red;
+    transform: scale(1.02);
+  }
+}

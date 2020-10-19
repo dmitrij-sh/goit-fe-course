@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: $primary-font;
+  font-size: $primary-font-size;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $text-color-dark;
+}
+
+*,
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+td,
+th {
+  padding: 0px;
+  text-align: left;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  resize: none;
+}

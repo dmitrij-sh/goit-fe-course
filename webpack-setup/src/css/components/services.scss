@@ -1,0 +1,35 @@
+.services-list {
+  @include flex-all('beet-wrap');
+
+  &__item {
+    position: relative;
+    padding-left: 5.125rem;
+    flex-basis: 33.3333%;
+
+    &:not(:nth-last-of-type(-n + 3)) {
+      margin-bottom: 5.75rem;
+    }
+
+    &-title {
+      margin-bottom: 0.875rem;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-family: $secondary-font;
+      font-size: $small-font-size;
+      line-height: 1.5rem;
+      color: $text-color-light;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0rem;
+    left: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    fill: $background-color-blue;
+  }
+  width: max-content;
+}

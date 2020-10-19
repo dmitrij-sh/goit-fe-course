@@ -1,0 +1,39 @@
+.menu-list {
+  @include flex-all('beet-wrap');
+  flex-basis: 51.1666%;
+
+  &__link {
+    font-weight: $font-height-regular;
+    color: $main-color-white;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+
+    &:hover,
+    &:focus {
+      color: $accent-color-yellow;
+      padding-bottom: 0.75rem;
+      border-bottom: 3px solid $accent-color-yellow;
+      width: 100%;
+      outline: none;
+    }
+  }
+}
+
+.menu-btn {
+  @extend %button;
+  border: none;
+  background-color: transparent;
+
+  &__icon {
+    display: block;
+    max-width: 18px;
+    max-height: 0.9375rem;
+    fill: $main-color-white;
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.3);
+      fill: $accent-color-yellow;
+    }
+  }
+}

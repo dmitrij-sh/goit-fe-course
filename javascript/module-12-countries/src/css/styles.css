@@ -1,54 +1,50 @@
-.container {
-  max-width: 900px;
-  margin: 0px auto;
-  padding: 30px 0px;
+body {
+  padding-top: 150px;
+  background-image: url(../images/bg.png);
 }
 
-.task-section {
+.form-input {
   padding: 10px;
-  border: 1px solid grey;
-  box-shadow: inset 0px 0px 5px 1px;
-}
-
-.task-section:not(:last-of-type) {
-  margin-bottom: 10px;
-}
-
-.task-section__title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.task-section__text {
-  margin-bottom: 10px;
-}
-
-.task-section__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.task-section__item:not(:last-of-type) {
-  margin-bottom: 10px;
-}
-.item h2 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.item li {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.btn {
-  margin: 5px;
-  padding: 2px;
-  border: 1px solid grey;
+  text-align: center;
+  margin: auto;
   display: block;
+  font-size: 20px;
+  height: 40px;
+  min-width: 300px;
+  border-style: solid;
+  border-radius: 20px;
+  outline: none;
 }
 
-.task-section__input {
-  border: 3px solid #bdbdbd;
+.country__title {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country__card {
+  margin-right: 30px;
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+.country__list {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: auto;
+  text-align: center;
+}
+
+.country__card-list {
+  padding-left: 30px;
+}
+
+.country__card-item {
+  list-style-type: square;
 }

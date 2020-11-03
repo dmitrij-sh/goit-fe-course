@@ -32,7 +32,7 @@ function checkQuantityCountries(country) {
     return;
   }
 
-  if (country.length > 1 || country.length < 10) {
+  if (country.length > 1 && country.length < 10) {
     renderList(country);
   }
 

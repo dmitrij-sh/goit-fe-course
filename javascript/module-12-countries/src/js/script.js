@@ -11,15 +11,13 @@ const refs = {
 
 refs.input.addEventListener('input', debounce(onSearchCountry, 500));
 
-function onSearchCountry(e) {
-  if (!e.target.value) {
+function onSearchCountry({ target: { value } }) {
+  if (!value) {
     clearRenderCard();
     return;
   }
 
-  API.fetchCountries(e.target.value)
-    .then(checkQuantityCountries)
-    .catch(fetchError);
+  API.fetchCountries(value).then(checkQuantityCountries).catch(fetchError);
 }
 
 function checkQuantityCountries(country) {
@@ -34,7 +32,7 @@ function checkQuantityCountries(country) {
     return;
   }
 
-  if (country.length > 1 < 10) {
+  if (country.length > 1 || country.length < 10) {
     renderList(country);
   }
 

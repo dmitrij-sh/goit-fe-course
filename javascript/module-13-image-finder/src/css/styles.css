@@ -1,0 +1,124 @@
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  padding-top: 150px;
+  /* background-image: url(../images/bg.png); */
+}
+.search-form {
+  width: 100%;
+  line-height: 1.5;
+  padding: 20px 10px 20px 10px;
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-form__input {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button__spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+.button__spinner.is-hidden {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery__item {
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.form-input {
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  min-width: 300px;
+  border-style: solid;
+  border-radius: 20px;
+  outline: none;
+}
+
+.country__title {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country__card {
+  margin-right: 30px;
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+.country__list {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: auto;
+  text-align: center;
+}
+
+.country__card-list {
+  padding-left: 30px;
+}
+
+.country__card-item {
+  list-style-type: square;
+}

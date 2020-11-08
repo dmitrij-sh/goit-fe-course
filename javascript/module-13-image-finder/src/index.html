@@ -5,34 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Dmitrij Shamota" />
-    <title>js-hw-12-countries</title>
+    <title>js-hw-13-image-finder</title>
   </head>
 
   <body>
-    <form class="search-form" id="search-form">
-      <div class="search-form__group">
-        <input
-          class="search-form__input"
-          type="text"
-          name="query"
-          autocomplete="off"
-          placeholder="Search images..."
-        />
+    <div class="container">
+      <form class="search-form">
+        <div class="wrapper">
+          <input
+            class="search-form__input"
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+
+          <button class="search-form__btn" type="submit">Искать</button>
+        </div>
+
+        <div class="copyright">
+          <p class="copyright__text">This service provided by</p>
+          <a class="copyright__link" href="pixhttps://pixabay.com">
+            <img
+              class="copyright__icon"
+              src="./images/pixabay.svg"
+              width="130"
+              height="50"
+              alt="pixabay"
+            />
+          </a>
+        </div>
+      </form>
+
+      <ul class="gallery"></ul>
+
+      <button class="button" type="button" data-action="load-more">
+        <span
+          class="button__spinner is-hidden"
+          role="status"
+          aria-hidden="true"
+        ></span>
+
+        <span class="button__label"></span>
+      </button>
+
+      <div class="scroll-up">
+        <svg viewbox="-2 -2 52 52">
+          <path
+            class="scroll-up__path"
+            d="M24,0
+        a24,24 0 0,1 0,48
+        a24,24 0 0,1 0,-48"
+          />
+        </svg>
       </div>
-
-      <button class="search-form__btn button" type="submit">Искать</button>
-    </form>
-
-    <ul class="gallery"></ul>
-
-    <button class="button" type="button" data-action="load-more">
-      <span
-        class="button__spinner is-hidden"
-        role="status"
-        aria-hidden="true"
-      ></span>
-
-      <span class="button__label"></span>
-    </button>
+    </div>
   </body>
 </html>

@@ -1,9 +1,11 @@
+import debounce from 'lodash.debounce';
 import { error, success } from './pnotify';
 import API from './apiService';
 import LoadMoreBtn from './loadMoreBtn';
 import onOpenModal from './openModal';
 import imageCardTpl from '../templates/imageCard.hbs';
 import animateScrollTo from 'animated-scroll-to';
+import { refs } from './refs';
 
 const imgApiService = new API();
 const loadMoreBtn = new LoadMoreBtn({
@@ -11,17 +13,10 @@ const loadMoreBtn = new LoadMoreBtn({
   hidden: true,
 });
 
-const refs = {
-  containerCard: document.querySelector('.gallery'),
-  form: document.querySelector('.search-form'),
-  all: document.querySelectorAll('li'),
-  scrollBackBtn: document.querySelector('.scroll-up'),
-};
-
 refs.form.addEventListener('submit', onSearchImage);
 loadMoreBtn.refs.button.addEventListener('click', fetchImages);
 refs.containerCard.addEventListener('click', onOpenModal);
-window.addEventListener('scroll', scrollToBack);
+window.addEventListener('scroll', onScrollToBack);
 
 function onSearchImage(e) {
   e.preventDefault();
@@ -69,10 +64,17 @@ function scrollToElement() {
     maxDuration: 3000,
     verticalOffset: -20,
   });
+
+  // window.scrollTo({
+  //   top: getTop,
+  //   left: 0,
+  //   behavior: 'smooth',
+  // });
 }
 
-function scrollToBack() {
+function onScrollToBack() {
   const getTop = document.documentElement.scrollTop;
+
   if (getTop > 180) {
     refs.scrollBackBtn.classList.add('is-active');
   } else {
@@ -84,4 +86,15 @@ function scrollToBack() {
       maxDuration: 3000,
     });
   });
+
+  infinityScroll();
+}
+
+function infinityScroll() {
+  const getPosition = document.documentElement.getBoundingClientRect().bottom;
+
+  if (getPosition < document.documentElement.clientHeight + 100) {
+    imgApiService.incrementPage();
+    fetchImages();
+  }
 }

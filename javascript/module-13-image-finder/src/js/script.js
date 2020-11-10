@@ -34,18 +34,23 @@ function onSearchImage(e) {
   refs.form.reset();
 }
 
-function fetchImages() {
+async function fetchImages() {
   loadMoreBtn.disable();
-  imgApiService.fetchImages().then(response => {
-    renderImagesCard(response);
+
+  try {
+    const hits = await imgApiService.fetchImages();
+
+    renderImagesCard(hits);
     scrollToElement();
+    loadMoreBtn.enable();
+
     success({
       text: 'Success',
       delay: 2000,
     });
-
-    loadMoreBtn.enable();
-  });
+  } catch (er) {
+    console.log(er);
+  }
 }
 
 function renderImagesCard(elements) {

@@ -1,6 +1,6 @@
 const debounce = require('lodash.debounce');
 import error from './pnotify';
-import API from './fetchCountries';
+import API from './apiService';
 import countryCardTpl from '../templates/countryCard.hbs';
 import countryListTpl from '../templates/countryList.hbs';
 
@@ -11,13 +11,13 @@ const refs = {
 
 refs.input.addEventListener('input', debounce(onSearchCountry, 500));
 
-function onSearchCountry({ target: { value } }) {
+async function onSearchCountry({ target: { value } }) {
   if (!value) {
     clearRenderCard();
     return;
   }
 
-  API.fetchCountries(value).then(checkQuantityCountries).catch(fetchError);
+  await API.fetchCountries(value).then(checkQuantityCountries);
 }
 
 function checkQuantityCountries(country) {
@@ -51,8 +51,4 @@ function renderList(country) {
 
 function clearRenderCard() {
   refs.containerCard.innerHTML = '';
-}
-
-function fetchError(error) {
-  console.log(error);
 }

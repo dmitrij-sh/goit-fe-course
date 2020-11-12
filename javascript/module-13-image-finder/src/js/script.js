@@ -1,4 +1,4 @@
-import debounce from 'lodash.debounce';
+// import debounce from 'lodash.debounce';
 import { error, success } from './pnotify';
 import API from './apiService';
 import LoadMoreBtn from './loadMoreBtn';
@@ -6,12 +6,16 @@ import onOpenModal from './openModal';
 import imageCardTpl from '../templates/imageCard.hbs';
 import animateScrollTo from 'animated-scroll-to';
 import { refs } from './refs';
+import { Observer } from './intersectionObserver';
+export { fetchImages, imgApiService };
 
 const imgApiService = new API();
 const loadMoreBtn = new LoadMoreBtn({
   selector: '[data-action="load-more"]',
   hidden: true,
 });
+
+Observer.observe(refs.target);
 
 refs.form.addEventListener('submit', onSearchImage);
 loadMoreBtn.refs.button.addEventListener('click', fetchImages);
@@ -41,12 +45,12 @@ async function fetchImages() {
     const hits = await imgApiService.fetchImages();
 
     renderImagesCard(hits);
-    scrollToElement();
     loadMoreBtn.enable();
+    // scrollToElement();
 
     success({
       text: 'Success',
-      delay: 2000,
+      delay: 1000,
     });
   } catch (er) {
     console.log(er);
@@ -91,15 +95,4 @@ function onScrollToBack() {
       maxDuration: 3000,
     });
   });
-
-  infinityScroll();
-}
-
-function infinityScroll() {
-  const getPosition = document.documentElement.getBoundingClientRect().bottom;
-
-  if (getPosition < document.documentElement.clientHeight + 100) {
-    imgApiService.incrementPage();
-    fetchImages();
-  }
 }

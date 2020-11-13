@@ -28,7 +28,7 @@ function onSearchImage(e) {
   imgApiService.query = e.currentTarget.elements.query.value;
 
   if (imgApiService.query === '') {
-    return error({ title: 'Please enter a more specific query!', delay: 2000 });
+    return error({ title: 'Please enter a more specific query!', delay: 1000 });
   }
 
   loadMoreBtn.show();
@@ -41,20 +41,20 @@ function onSearchImage(e) {
 async function fetchImages() {
   loadMoreBtn.disable();
 
-  try {
-    const hits = await imgApiService.fetchImages();
+  const hits = await imgApiService.fetchImages();
 
-    renderImagesCard(hits);
-    loadMoreBtn.enable();
-    // scrollToElement();
-
-    success({
-      text: 'Success',
-      delay: 1000,
-    });
-  } catch (er) {
-    console.log(er);
+  if (hits.length === 0) {
+    loadMoreBtn.hide();
+    return error({ title: 'Please enter a more specific query!', delay: 1000 });
   }
+
+  renderImagesCard(hits);
+  loadMoreBtn.enable();
+  // scrollToElement();
+  success({
+    text: 'Success',
+    delay: 1000,
+  });
 }
 
 function renderImagesCard(elements) {

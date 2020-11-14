@@ -45,7 +45,7 @@ async function fetchImages() {
 
   if (hits.length === 0) {
     loadMoreBtn.hide();
-    return error({ title: 'Please enter a more specific query!', delay: 1000 });
+    return error({ title: 'Nothing was found', delay: 1000 });
   }
 
   renderImagesCard(hits);

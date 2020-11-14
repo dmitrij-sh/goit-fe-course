@@ -23,7 +23,7 @@ export default class ImgApiService {
 
     this.incrementPage();
     try {
-      const { data } = await axios.get(`${BASE_URL}${searchParams}`);
+      const { data } = await axios.get(url);
 
       return data.hits;
     } catch (error) {

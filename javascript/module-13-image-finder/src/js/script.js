@@ -55,6 +55,7 @@ async function fetchImages() {
     text: 'Success',
     delay: 1000,
   });
+  refs.lazyImages.forEach(LazyLoadImages);
 }
 
 function renderImagesCard(elements) {
@@ -95,4 +96,19 @@ function onScrollToBack() {
       maxDuration: 3000,
     });
   });
+}
+
+function LazyLoadImages(target) {
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.getAttribute('data-lazy');
+        img.setAttribute('src', src);
+        img.classList.add('is-lazy');
+        observer.disconnect;
+      }
+    });
+  });
+  io.observe(target);
 }

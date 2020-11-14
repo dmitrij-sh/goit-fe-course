@@ -1,11 +1,11 @@
 {{#each this}}
   <li class="gallery__item">
     <div class="photo-card">
-      <img src="{{webformatURL}}"
+      <img class="lazy"
+      loading="lazy"
+      data-lazy="{{webformatURL}}"
       data-source="{{largeImageURL}}"
-      alt="{{type}}"
-      width="360"
-      height="320"/>
+      alt="{{type}}"/>
 
       <div class="stats">
         <p class="stats-item">
